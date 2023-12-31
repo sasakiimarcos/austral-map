@@ -1,5 +1,7 @@
 import React from 'react';
 import {FileUpload} from "./FileUpload";
+import {Nodee} from "./Nodee"
+import {Edge} from "./Edge"
 
 export const DisplayContent = ({selectedOption, onReturn}) => {
 
@@ -16,8 +18,22 @@ export const DisplayContent = ({selectedOption, onReturn}) => {
             <p>Plan</p>
             <p>Selected Option: {planMap.get(selectedOption)}</p>
             <FileUpload />
+            
+            <div>
+                <div style={{float: "left"}}>
+                    <Nodee nodeId="mat1" name={"Materia 1"}/>
+                </div>
+            </div>
+            <h3>Just some text to create space</h3>
+            <div>
+                <div style={{float: "right"}}>
+                    <Nodee nodeId="mat2" name={"Materia 2"}/>
+                </div>
+            </div>
+            <Edge start={"mat1"} end={"mat2"} />
+
             <button onClick={onReturn}>Return to Original Page</button>
-        </div>
+        </div>        
     )
 }
 
