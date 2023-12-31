@@ -1,0 +1,31 @@
+.node{
+    font-size: small;
+    display: inline-block;
+    border: black 2px solid;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0.3em;
+    background-color: white;
+    text-align: center;
+    break-inside: avoid;
+}
+
+#pde{
+    display: flex;
+    justify-content: space-between;
+    column-count: 11;
+}
+
+.cuatrimestre{
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 0 10px;
+}
+
+h2 {
+    display: block;
+    font-size: medium;
+    flex-basis: 100%;
+    break-inside: avoid;
+  }
+  
