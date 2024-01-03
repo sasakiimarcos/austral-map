@@ -2,7 +2,7 @@ import pandas as pd
 import re
 import numpy as np
 
-def convert_html_plan(html_file, courses_in_first_sem):
+def convert_html_plan(html_file, courses_in_first_sem, years):
     pd.set_option('display.max_columns', None)
     dfs = pd.read_html(html_file, skiprows=[0])
     # To not have the first row as column indexes
@@ -18,7 +18,7 @@ def convert_html_plan(html_file, courses_in_first_sem):
                 .rename({0: 'Course', 1: 'ID', 2: 'Year', 3: 'Semester', 6: 'Credits', 7: 'Prerequisites to Take',
                          8: 'Prerequisites to Pass'}, axis=1)
             # we assign a year to courses from year 1 to 5
-            result['Year'] = count if count <= 5 else result['Year']
+            result['Year'] = count if count <= years else ("Electives" if count == years + 1 else 'Other Requirements')
             # Replace some of the unwanted text
             result.replace(to_replace=r'^0\.00|Unnamed.*', value=np.nan, regex=True, inplace=True)
             i = 0
@@ -82,5 +82,6 @@ def convert_html_plan(html_file, courses_in_first_sem):
     main_plan.to_json('plan.json', orient="records", indent=2)
 
 if __name__ == '__main__':
-    courses_in_first_sem = [5, 6, 7, 6, 3] # para ing inf 2023
-    convert_html_plan('siu.html',courses_in_first_sem)
+    courses_in_first_sem = [5, 6, 7, 6, 3]
+    years = 5
+    convert_html_plan('siu.html',courses_in_first_sem, years)

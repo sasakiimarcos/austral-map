@@ -470,7 +470,7 @@
   {
     "Course":"Marketing",
     "ID":"GIINFOP1",
-    "Year":null,
+    "Year":"Electives",
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINFTE, Regularizada), (GIINDINING, Aprobada)",
@@ -479,7 +479,7 @@
   {
     "Course":"Sistemas de Negocios",
     "ID":"GIINFSNEG",
-    "Year":null,
+    "Year":"Electives",
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINFTE, Regularizada), (GIINDINING, Aprobada)",
@@ -488,7 +488,7 @@
   {
     "Course":"Dise\u00f1o y Programaci\u00f3n Orientado a Internet",
     "ID":"GIINFDPOI",
-    "Year":null,
+    "Year":"Electives",
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
@@ -497,7 +497,7 @@
   {
     "Course":"Comunicaci\u00f3n de Datos",
     "ID":"GIINFCD",
-    "Year":null,
+    "Year":"Electives",
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
@@ -506,7 +506,7 @@
   {
     "Course":"Dise\u00f1o Avanzado Orientado a Objetos",
     "ID":"GIINFDAO",
-    "Year":null,
+    "Year":"Electives",
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
@@ -515,7 +515,7 @@
   {
     "Course":"Seguridad Inform\u00e1tica II",
     "ID":"GIINFSEGI2",
-    "Year":null,
+    "Year":"Electives",
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
@@ -524,7 +524,7 @@
   {
     "Course":"Sistemas de Inteligencia de Negocios",
     "ID":"GIINFSISINTN",
-    "Year":null,
+    "Year":"Electives",
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
@@ -533,7 +533,7 @@
   {
     "Course":"Sistemas Distribuidos II",
     "ID":"GIINFSISTD2",
-    "Year":null,
+    "Year":"Electives",
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
@@ -542,7 +542,7 @@
   {
     "Course":"An\u00e1lisis de Datos",
     "ID":"GIINFADDAT",
-    "Year":null,
+    "Year":"Electives",
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
@@ -551,7 +551,7 @@
   {
     "Course":"Big Data",
     "ID":"GIINFBIDAT",
-    "Year":null,
+    "Year":"Electives",
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
@@ -560,7 +560,7 @@
   {
     "Course":"Computaci\u00f3n Gr\u00e1fica",
     "ID":"GIINFCOMPG00",
-    "Year":null,
+    "Year":"Electives",
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
@@ -569,7 +569,7 @@
   {
     "Course":"Dise\u00f1o de Sistemas Digitales",
     "ID":"GIINFDSDIG",
-    "Year":null,
+    "Year":"Electives",
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
@@ -578,7 +578,7 @@
   {
     "Course":"Emprendimientos de Tecnolog\u00eda",
     "ID":"GIINFEMTEC",
-    "Year":null,
+    "Year":"Electives",
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
@@ -587,7 +587,7 @@
   {
     "Course":"Ingenier\u00eda de Software",
     "ID":"GIINFISOF",
-    "Year":null,
+    "Year":"Electives",
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
@@ -596,7 +596,7 @@
   {
     "Course":"Realidad Virtual",
     "ID":"GIINFRVIRT",
-    "Year":null,
+    "Year":"Electives",
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
@@ -605,7 +605,7 @@
   {
     "Course":"Automatizaci\u00f3n",
     "ID":"GIINDAUTOMT",
-    "Year":null,
+    "Year":"Electives",
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
@@ -614,7 +614,7 @@
   {
     "Course":"Innovaci\u00f3n Tecnol\u00f3gica",
     "ID":"GIINFINTEC",
-    "Year":null,
+    "Year":"Electives",
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
@@ -623,7 +623,7 @@
   {
     "Course":"Rob\u00f3tica y Visi\u00f3n Artificial",
     "ID":"GIINFRVA",
-    "Year":null,
+    "Year":"Electives",
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
@@ -632,7 +632,7 @@
   {
     "Course":"Sistema de Soporte de Decisiones",
     "ID":"GIINDSSOPDEC",
-    "Year":null,
+    "Year":"Electives",
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
@@ -641,7 +641,7 @@
   {
     "Course":"Sistemas de Comunicaciones",
     "ID":"GIINFSCOM",
-    "Year":null,
+    "Year":"Electives",
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
@@ -650,7 +650,7 @@
   {
     "Course":"Sistemas Expertos",
     "ID":"GIINFSISTEXP",
-    "Year":null,
+    "Year":"Electives",
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
@@ -659,7 +659,7 @@
   {
     "Course":"Teor\u00eda de la Computaci\u00f3n",
     "ID":"GIINFOP3",
-    "Year":null,
+    "Year":"Electives",
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
@@ -668,7 +668,7 @@
   {
     "Course":"Teor\u00eda de la Programaci\u00f3n",
     "ID":"GIINFTP",
-    "Year":null,
+    "Year":"Electives",
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
@@ -677,7 +677,7 @@
   {
     "Course":"F\u00edsica III",
     "ID":"GIINDFISIII",
-    "Year":null,
+    "Year":"Electives",
     "Semester":null,
     "Credits":"15.00",
     "Prerequisites to Take":null,
@@ -686,7 +686,7 @@
   {
     "Course":"L\u00f3gica",
     "ID":"GIINFLOG",
-    "Year":null,
+    "Year":"Electives",
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
@@ -695,7 +695,7 @@
   {
     "Course":"Medios de Representaci\u00f3n",
     "ID":"GIINFMRR",
-    "Year":null,
+    "Year":"Electives",
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
@@ -704,7 +704,7 @@
   {
     "Course":"Qu\u00edmica I",
     "ID":"GIINDQUI1",
-    "Year":null,
+    "Year":"Electives",
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
@@ -713,7 +713,7 @@
   {
     "Course":"Sistemas de Informaci\u00f3n Gerencial",
     "ID":"GIINDSISINF",
-    "Year":null,
+    "Year":"Electives",
     "Semester":null,
     "Credits":"8.00",
     "Prerequisites to Take":null,
@@ -722,7 +722,7 @@
   {
     "Course":"Conceptos B\u00e1sicos de Sistemas Embebidos",
     "ID":"GIINFCBSEMB",
-    "Year":null,
+    "Year":"Electives",
     "Semester":null,
     "Credits":"5.00",
     "Prerequisites to Take":null,
@@ -731,7 +731,7 @@
   {
     "Course":"Introducci\u00f3n a la Inteligencia Artificial",
     "ID":"GIINFINTROIA",
-    "Year":null,
+    "Year":"Electives",
     "Semester":null,
     "Credits":"5.00",
     "Prerequisites to Take":null,
@@ -740,7 +740,7 @@
   {
     "Course":"Pr\u00e1ctica Profesional Supervisada",
     "ID":"GIINFPRA.PROF",
-    "Year":null,
+    "Year":"Other Requirements",
     "Semester":null,
     "Credits":"33.00",
     "Prerequisites to Take":"(1, Aprobado), (2, Aprobado), (3, Aprobado)",
@@ -749,7 +749,7 @@
   {
     "Course":"Programa de Vida Universitaria",
     "ID":"GFIEXTVU",
-    "Year":null,
+    "Year":"Other Requirements",
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
@@ -758,7 +758,7 @@
   {
     "Course":"Taller de Expresi\u00f3n Oral y Escrita",
     "ID":"GIINFTEOE",
-    "Year":null,
+    "Year":"Other Requirements",
     "Semester":null,
     "Credits":"2.00",
     "Prerequisites to Take":null,
@@ -767,7 +767,7 @@
   {
     "Course":"Ingl\u00e9s Nivel I",
     "ID":"GEXTING",
-    "Year":null,
+    "Year":"Other Requirements",
     "Semester":null,
     "Credits":null,
     "Prerequisites to Take":null,
@@ -776,7 +776,7 @@
   {
     "Course":"Ingl\u00e9s Nivel II",
     "ID":"GEXTILEV2",
-    "Year":null,
+    "Year":"Other Requirements",
     "Semester":null,
     "Credits":null,
     "Prerequisites to Take":null,
@@ -785,7 +785,7 @@
   {
     "Course":"Seminario de Programaci\u00f3n",
     "ID":"GIINFSCP",
-    "Year":null,
+    "Year":"Other Requirements",
     "Semester":null,
     "Credits":"3.00",
     "Prerequisites to Take":null,
