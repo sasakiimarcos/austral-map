@@ -1,706 +1,794 @@
-{
-  "GIINDAM1":{
+[
+  {
     "Course":"An\u00e1lisis Matem\u00e1tico I",
+    "ID":"GIINDAM1",
     "Year":1,
-    "Semester":null,
+    "Semester":1,
     "Credits":"15.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINDAL1":{
+  {
     "Course":"\u00c1lgebra I",
+    "ID":"GIINDAL1",
     "Year":1,
-    "Semester":null,
+    "Semester":1,
     "Credits":"15.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINFPR1":{
+  {
     "Course":"Programaci\u00f3n I",
+    "ID":"GIINFPR1",
     "Year":1,
-    "Semester":null,
+    "Semester":1,
     "Credits":"15.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINDINING":{
+  {
     "Course":"Introducci\u00f3n a la Ingenier\u00eda",
+    "ID":"GIINDINING",
     "Year":1,
-    "Semester":null,
+    "Semester":1,
     "Credits":"5.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINDIFI":{
+  {
     "Course":"Filosof\u00eda General",
+    "ID":"GIINDIFI",
     "Year":1,
-    "Semester":null,
+    "Semester":1,
     "Credits":"5.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINDAM2":{
+  {
     "Course":"An\u00e1lisis Matem\u00e1tico II",
+    "ID":"GIINDAM2",
     "Year":1,
-    "Semester":null,
+    "Semester":2,
     "Credits":"15.00",
     "Prerequisites to Take":"(GIINDAM1, Regularizada)",
     "Prerequisites to Pass":"(GIINDAM1, Aprobada)"
   },
-  "GIINDAL2":{
+  {
     "Course":"\u00c1lgebra II",
+    "ID":"GIINDAL2",
     "Year":1,
-    "Semester":null,
+    "Semester":2,
     "Credits":"15.00",
     "Prerequisites to Take":"(GIINDAL1, Regularizada)",
     "Prerequisites to Pass":"(GIINDAL1, Aprobada)"
   },
-  "GIINFIP2":{
+  {
     "Course":"Programaci\u00f3n II",
+    "ID":"GIINFIP2",
     "Year":1,
-    "Semester":null,
+    "Semester":2,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINFPR1, Regularizada)",
     "Prerequisites to Pass":"(GIINFPR1, Aprobada)"
   },
-  "GIINDFIS1":{
+  {
     "Course":"F\u00edsica General",
+    "ID":"GIINDFIS1",
     "Year":1,
-    "Semester":null,
+    "Semester":2,
     "Credits":"15.00",
     "Prerequisites to Take":"(GIINDAM1, Regularizada)",
     "Prerequisites to Pass":"(GIINDAM1, Aprobada)"
   },
-  "GIINFLCD":{
+  {
     "Course":"T\u00e9cnicas Digitales",
+    "ID":"GIINFLCD",
     "Year":1,
-    "Semester":null,
+    "Semester":2,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINFPR1, Regularizada)",
     "Prerequisites to Pass":"(GIINFPR1, Aprobada)"
   },
-  "GIINFOC":{
+  {
     "Course":"Arquitectura de Computadoras",
+    "ID":"GIINFOC",
     "Year":2,
-    "Semester":null,
+    "Semester":1,
     "Credits":"8.00",
     "Prerequisites to Take":"(GIINFPR1, Aprobada)",
     "Prerequisites to Pass":"(GIINFLCD, Aprobada)"
   },
-  "GIINDAM3":{
+  {
     "Course":"An\u00e1lisis Matem\u00e1tico III",
+    "ID":"GIINDAM3",
     "Year":2,
-    "Semester":null,
+    "Semester":1,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINDAM2, Regularizada), (GIINDAM1, Aprobada)",
     "Prerequisites to Pass":"(GIINDAM2, Aprobada)"
   },
-  "GIINFAL3":{
+  {
     "Course":"\u00c1lgebra III",
+    "ID":"GIINFAL3",
     "Year":2,
-    "Semester":null,
+    "Semester":1,
     "Credits":"8.00",
     "Prerequisites to Take":"(GIINDAL2, Regularizada), (GIINDAL1, Aprobada)",
     "Prerequisites to Pass":"(GIINDAL2, Aprobada)"
   },
-  "GIINDEYM":{
+  {
     "Course":"Electricidad y Magnetismo",
+    "ID":"GIINDEYM",
     "Year":2,
-    "Semester":null,
+    "Semester":1,
     "Credits":"15.00",
     "Prerequisites to Take":"(GIINDFIS1, Regularizada)",
     "Prerequisites to Pass":"(GIINDFIS1, Aprobada)"
   },
-  "GIINFAED":{
+  {
     "Course":"Algoritmos y Estructuras de Datos",
+    "ID":"GIINFAED",
     "Year":2,
-    "Semester":null,
+    "Semester":1,
     "Credits":"15.00",
     "Prerequisites to Take":"(GIINFIP2, Regularizada), (GIINFPR1, Aprobada)",
     "Prerequisites to Pass":"(GIINFIP2, Aprobada)"
   },
-  "GIINDTE1":{
+  {
     "Course":"Teolog\u00eda",
+    "ID":"GIINDTE1",
     "Year":2,
-    "Semester":null,
+    "Semester":1,
     "Credits":"8.00",
     "Prerequisites to Take":"(GIINDIFI, Regularizada)",
     "Prerequisites to Pass":"(GIINDIFI, Aprobada)"
   },
-  "GIINFAM4":{
+  {
     "Course":"C\u00e1lculo Num\u00e9rico",
+    "ID":"GIINFAM4",
     "Year":2,
-    "Semester":null,
+    "Semester":2,
     "Credits":"8.00",
     "Prerequisites to Take":"(GIINDAM2, Regularizada), (GIINDAM1, Aprobada)",
     "Prerequisites to Pass":"(GIINDAM2, Aprobada)"
   },
-  "GIINDEST1":{
+  {
     "Course":"Estad\u00edstica I",
+    "ID":"GIINDEST1",
     "Year":2,
-    "Semester":null,
+    "Semester":2,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINDAM1, Regularizada)",
     "Prerequisites to Pass":"(GIINDAM1, Aprobada)"
   },
-  "GIINFMD":{
+  {
     "Course":"Matem\u00e1tica Discreta",
+    "ID":"GIINFMD",
     "Year":2,
-    "Semester":null,
+    "Semester":2,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINDAL2, Regularizada), (GIINDAL1, Aprobada)",
     "Prerequisites to Pass":"(GIINDAL2, Aprobada)"
   },
-  "GIINFADA":{
+  {
     "Course":"An\u00e1lisis y Dise\u00f1o de Algoritmos",
+    "ID":"GIINFADA",
     "Year":2,
-    "Semester":null,
+    "Semester":2,
     "Credits":"15.00",
     "Prerequisites to Take":"(GIINFAED, Regularizada), (GIINFIP2, Aprobada)",
     "Prerequisites to Pass":"(GIINFAED, Aprobada)"
   },
-  "GIINDANTROP":{
+  {
     "Course":"Antropolog\u00eda",
+    "ID":"GIINDANTROP",
     "Year":2,
-    "Semester":null,
+    "Semester":2,
     "Credits":"5.00",
     "Prerequisites to Take":"(GIINDIFI, Regularizada)",
     "Prerequisites to Pass":"(GIINDIFI, Aprobada)"
   },
-  "GIINFSISOP":{
+  {
     "Course":"Sistemas Operativos",
+    "ID":"GIINFSISOP",
     "Year":2,
-    "Semester":null,
+    "Semester":2,
     "Credits":"8.00",
     "Prerequisites to Take":"(GIINFOC, Regularizada), (GIINFLCD, Aprobada)",
     "Prerequisites to Pass":"(GIINFOC, Aprobada)"
   },
-  "GIINFBD":{
+  {
     "Course":"Bases de Datos",
+    "ID":"GIINFBD",
     "Year":2,
-    "Semester":null,
+    "Semester":2,
     "Credits":"13.00",
     "Prerequisites to Take":"(GIINFAED, Regularizada), (GIINFIP2, Aprobada)",
     "Prerequisites to Pass":"(GIINFAED, Aprobada)"
   },
-  "GIINFTE":{
+  {
     "Course":"Teor\u00eda de la Empresa",
+    "ID":"GIINFTE",
     "Year":3,
-    "Semester":null,
+    "Semester":1,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINDINING, Regularizada), (GIINFIP2, Regularizada), (GIINFPR1, Aprobada)",
     "Prerequisites to Pass":"(GIINDINING, Aprobada), (GIINFIP2, Aprobada)"
   },
-  "GIINDEST2":{
+  {
     "Course":"Estad\u00edstica II",
+    "ID":"GIINDEST2",
     "Year":3,
-    "Semester":null,
+    "Semester":1,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINDEST1, Regularizada), (GIINDAM1, Aprobada)",
     "Prerequisites to Pass":"(GIINDEST1, Aprobada)"
   },
-  "GIINFL1":{
+  {
     "Course":"Laboratorio I",
+    "ID":"GIINFL1",
     "Year":3,
-    "Semester":null,
+    "Semester":1,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINFAED, Regularizada), (GIINFIP2, Aprobada)",
     "Prerequisites to Pass":"(GIINFAED, Aprobada)"
   },
-  "GIINFRCDA":{
+  {
     "Course":"Redes de Comunicaci\u00f3n de Datos",
+    "ID":"GIINFRCDA",
     "Year":3,
-    "Semester":null,
+    "Semester":1,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINFPR1, Aprobada)",
     "Prerequisites to Pass":"(GIINFLCD, Aprobada)"
   },
-  "GIINFICO":{
+  {
     "Course":"Electr\u00f3nica Inform\u00e1tica",
+    "ID":"GIINFICO",
     "Year":3,
-    "Semester":null,
+    "Semester":1,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINFLCD, Regularizada), (GIINFIP2, Regularizada), (GIINFPR1, Aprobada)",
     "Prerequisites to Pass":"(GIINFLCD, Aprobada), (GIINFIP2, Aprobada)"
   },
-  "GIINDETGEN":{
+  {
     "Course":"\u00c9tica General",
+    "ID":"GIINDETGEN",
     "Year":3,
-    "Semester":null,
+    "Semester":1,
     "Credits":"5.00",
     "Prerequisites to Take":"(GIINDANTROP, Regularizada), (GIINDIFI, Aprobada)",
     "Prerequisites to Pass":"(GIINDANTROP, Aprobada)"
   },
-  "GIINFDS":{
+  {
     "Course":"Dise\u00f1o de Sistemas",
+    "ID":"GIINFDS",
     "Year":3,
-    "Semester":null,
+    "Semester":1,
     "Credits":"13.00",
     "Prerequisites to Take":"(GIINFADA, Regularizada), (GIINFBD, Regularizada), (GIINFAED, Aprobada)",
     "Prerequisites to Pass":"(GIINFADA, Aprobada), (GIINFBD, Aprobada)"
   },
-  "GIINFL2":{
+  {
     "Course":"Laboratorio II",
+    "ID":"GIINFL2",
     "Year":3,
-    "Semester":null,
+    "Semester":2,
     "Credits":"15.00",
     "Prerequisites to Take":"(GIINFL1, Regularizada), (GIINFAED, Aprobada)",
     "Prerequisites to Pass":"(GIINFL1, Aprobada)"
   },
-  "GIINFINGS":{
+  {
     "Course":"Ingenier\u00eda de Sistemas",
+    "ID":"GIINFINGS",
     "Year":3,
-    "Semester":null,
+    "Semester":2,
     "Credits":"13.00",
     "Prerequisites to Take":"(GIINFDS, Regularizada), (GIINFADA, Aprobada)",
     "Prerequisites to Pass":"(GIINFDS, Aprobada)"
   },
-  "GIINFLP":{
+  {
     "Course":"Lenguajes de Programaci\u00f3n",
+    "ID":"GIINFLP",
     "Year":3,
-    "Semester":null,
+    "Semester":2,
     "Credits":"13.00",
     "Prerequisites to Take":"(GIINFADA, Regularizada), (GIINFAED, Aprobada)",
     "Prerequisites to Pass":"(GIINFADA, Aprobada)"
   },
-  "GIINFDIN":{
+  {
     "Course":"Dise\u00f1o de Interacci\u00f3n",
+    "ID":"GIINFDIN",
     "Year":3,
-    "Semester":null,
+    "Semester":2,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINFIP2, Regularizada), (GIINFPR1, Aprobada)",
     "Prerequisites to Pass":"(GIINFIP2, Aprobada)"
   },
-  "GIINDTE2":{
+  {
     "Course":"Moral, Persona y Valores",
+    "ID":"GIINDTE2",
     "Year":3,
-    "Semester":null,
+    "Semester":2,
     "Credits":"8.00",
     "Prerequisites to Take":"(GIINDTE1, Regularizada), (GIINDIFI, Aprobada)",
     "Prerequisites to Pass":"(GIINDTE1, Aprobada)"
   },
-  "GIINDIOP":{
+  {
     "Course":"Investigaci\u00f3n Operativa",
+    "ID":"GIINDIOP",
     "Year":3,
-    "Semester":null,
+    "Semester":2,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINDAL2, Regularizada), (GIINDEST2, Regularizada), (GIINDAL1, Aprobada), (GIINDEST1, Aprobada)",
     "Prerequisites to Pass":"(GIINDAL2, Aprobada), (GIINDEST2, Aprobada)"
   },
-  "GIINFL3":{
+  {
     "Course":"Laboratorio III",
+    "ID":"GIINFL3",
     "Year":4,
-    "Semester":null,
+    "Semester":1,
     "Credits":"30.00",
     "Prerequisites to Take":"(GIINFDS, Regularizada), (GEXTING, Aprobada), (GIINFADA, Aprobada), (1, Aprobado)",
     "Prerequisites to Pass":"(GIINFDS, Aprobada)"
   },
-  "GIINFPC":{
+  {
     "Course":"Programaci\u00f3n Concurrente",
+    "ID":"GIINFPC",
     "Year":4,
-    "Semester":null,
+    "Semester":1,
     "Credits":"8.00",
     "Prerequisites to Take":"(GIINFSISOP, Regularizada), (GIINFLP, Regularizada), (GIINFOC, Aprobada), (GIINFADA, Aprobada), (GEXTING, Aprobada), (1, Aprobado)",
     "Prerequisites to Pass":"(GIINFSISOP, Aprobada), (GIINFLP, Aprobada)"
   },
-  "GIINFASCS":{
+  {
     "Course":"Aseguramiento de la Calidad del Software",
+    "ID":"GIINFASCS",
     "Year":4,
-    "Semester":null,
+    "Semester":1,
     "Credits":"8.00",
     "Prerequisites to Take":"(GEXTING, Aprobada), (GIINFINGS, Regularizada), (GIINFDS, Aprobada), (1, Aprobado)",
     "Prerequisites to Pass":"(GIINFINGS, Aprobada)"
   },
-  "GIINFSEGI":{
+  {
     "Course":"Seguridad Inform\u00e1tica",
+    "ID":"GIINFSEGI",
     "Year":4,
-    "Semester":null,
+    "Semester":1,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINFSISOP, Regularizada), (GIINFRCDA, Regularizada), (GIINFOC, Aprobada), (GIINFLCD, Aprobada), (GEXTING, Aprobada), (1, Aprobado)",
     "Prerequisites to Pass":"(GIINFSISOP, Aprobada), (GIINFRCDA, Aprobada)"
   },
-  "GIINDETPROF":{
+  {
     "Course":"\u00c9tica Profesional",
+    "ID":"GIINDETPROF",
     "Year":4,
-    "Semester":null,
+    "Semester":1,
     "Credits":"8.00",
     "Prerequisites to Take":"(GIINDETGEN, Regularizada), (GIINDANTROP, Aprobada), (GEXTING, Aprobada), (1, Aprobado)",
     "Prerequisites to Pass":"(GIINDETGEN, Aprobada)"
   },
-  "GIINFOPMLINF":{
+  {
     "Course":"Inteligencia Artificial",
+    "ID":"GIINFOPMLINF",
     "Year":4,
-    "Semester":null,
+    "Semester":1,
     "Credits":"10.00",
     "Prerequisites to Take":"(GEXTING, Aprobada), (GIINFBD, Regularizada), (GIINDEST2, Regularizada), (GIINFAED, Aprobada), (GIINDEST1, Aprobada), (1, Aprobado)",
     "Prerequisites to Pass":"(GIINFBD, Aprobada), (GIINDEST2, Aprobada)"
   },
-  "GIINFSISTD1":{
+  {
     "Course":"Sistemas Distribuidos",
+    "ID":"GIINFSISTD1",
     "Year":4,
-    "Semester":null,
+    "Semester":2,
     "Credits":"8.00",
     "Prerequisites to Take":"(GIINFBD, Regularizada), (GIINFPC, Regularizada), (GIINFAED, Aprobada), (GIINFSISOP, Aprobada), (GEXTING, Aprobada), (1, Aprobado)",
     "Prerequisites to Pass":"(GIINFBD, Aprobada), (GIINFPC, Aprobada)"
   },
-  "GIINDTECOM":{
+  {
     "Course":"Comunicaci\u00f3n Efectiva",
+    "ID":"GIINDTECOM",
     "Year":4,
-    "Semester":null,
+    "Semester":2,
     "Credits":"5.00",
     "Prerequisites to Take":"(GEXTING, Aprobada), (GIINFTE, Regularizada), (GIINDINING, Aprobada), (1, Aprobado)",
     "Prerequisites to Pass":"(GIINFTE, Aprobada)"
   },
-  "GIINDLEG":{
+  {
     "Course":"Legal",
+    "ID":"GIINDLEG",
     "Year":4,
-    "Semester":null,
+    "Semester":2,
     "Credits":"8.00",
     "Prerequisites to Take":"(GIINFTE, Regularizada), (GIINDINING, Aprobada), (GEXTING, Aprobada), (1, Aprobado)",
     "Prerequisites to Pass":"(GIINFTE, Aprobada)"
   },
-  "GIINDDOSIG":{
+  {
     "Course":"Responsabilidad Social",
+    "ID":"GIINDDOSIG",
     "Year":4,
-    "Semester":null,
+    "Semester":2,
     "Credits":"5.00",
     "Prerequisites to Take":"(GEXTING, Aprobada), (GIINDTE2, Regularizada), (GIINDTE1, Aprobada), (1, Aprobado)",
     "Prerequisites to Pass":"(GIINDTE2, Aprobada)"
   },
-  "GIINFTRGRAD":{
+  {
     "Course":"Trabajo de Grado",
+    "ID":"GIINFTRGRAD",
     "Year":5,
-    "Semester":null,
+    "Semester":1,
     "Credits":"52.00",
     "Prerequisites to Take":"(GIINFPC, Regularizada), (GIINFASCS, Regularizada), (GIINFSEGI, Regularizada), (GIINDETPROF, Regularizada), (GIINFOPMLINF, Regularizada), (GEXTING, Aprobada), (1, Aprobado), (2, Aprobado), (3, Aprobado)",
     "Prerequisites to Pass":"(GIINFPC, Regularizada), (GIINFASCS, Regularizada), (GIINFSEGI, Regularizada), (GIINDETPROF, Regularizada), (GIINFOPMLINF, Regularizada), (GEXTING, Aprobada), (1, Aprobado), (2, Aprobado), (3, Aprobado)"
   },
-  "GIINFDDP":{
+  {
     "Course":"Direcci\u00f3n de Proyectos",
+    "ID":"GIINFDDP",
     "Year":5,
-    "Semester":null,
+    "Semester":1,
     "Credits":"13.00",
     "Prerequisites to Take":"(GIINFINGS, Regularizada), (GIINFL3, Regularizada), (GIINFDS, Aprobada), (GEXTING, Aprobada), (1, Aprobado)",
     "Prerequisites to Pass":"(GIINFINGS, Aprobada), (GIINFL3, Aprobada)"
   },
-  "GIINDCON.Y PRE":{
+  {
     "Course":"Microeconom\u00eda Aplicada",
+    "ID":"GIINDCON.Y PRE",
     "Year":5,
-    "Semester":null,
+    "Semester":1,
     "Credits":"8.00",
     "Prerequisites to Take":"(GEXTING, Aprobada), (GIINFTE, Regularizada), (GIINDINING, Aprobada), (1, Aprobado)",
     "Prerequisites to Pass":"(GIINFTE, Aprobada)"
   },
-  "GIINFL4":{
+  {
     "Course":"Laboratorio IV",
+    "ID":"GIINFL4",
     "Year":5,
-    "Semester":null,
+    "Semester":2,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINFINGS, Aprobada), (GEXTING, Aprobada), (GIINFDDP, Regularizada), (1, Aprobado)",
     "Prerequisites to Pass":"(GIINFDDP, Aprobada)"
   },
-  "GIINDFHUM":{
+  {
     "Course":"Factor Humano",
+    "ID":"GIINDFHUM",
     "Year":5,
-    "Semester":null,
+    "Semester":2,
     "Credits":"10.00",
     "Prerequisites to Take":"(GEXTING, Aprobada), (GIINFTE, Regularizada), (GIINDINING, Aprobada), (1, Aprobado)",
     "Prerequisites to Pass":"(GIINFTE, Aprobada)"
   },
-  "GIINDECON.POL":{
+  {
     "Course":"Macroeconom\u00eda",
+    "ID":"GIINDECON.POL",
     "Year":5,
-    "Semester":null,
+    "Semester":2,
     "Credits":"8.00",
     "Prerequisites to Take":"(GIINDINING, Aprobada), (GIINFTE, Regularizada), (GEXTING, Aprobada), (1, Aprobado)",
     "Prerequisites to Pass":"(GIINFTE, Aprobada)"
   },
-  "GIINFOP1":{
+  {
     "Course":"Marketing",
+    "ID":"GIINFOP1",
     "Year":null,
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINFTE, Regularizada), (GIINDINING, Aprobada)",
     "Prerequisites to Pass":"(GIINFTE, Aprobada)"
   },
-  "GIINFSNEG":{
+  {
     "Course":"Sistemas de Negocios",
+    "ID":"GIINFSNEG",
     "Year":null,
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINFTE, Regularizada), (GIINDINING, Aprobada)",
     "Prerequisites to Pass":"(GIINFTE, Aprobada)"
   },
-  "GIINFDPOI":{
+  {
     "Course":"Dise\u00f1o y Programaci\u00f3n Orientado a Internet",
+    "ID":"GIINFDPOI",
     "Year":null,
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINFCD":{
+  {
     "Course":"Comunicaci\u00f3n de Datos",
+    "ID":"GIINFCD",
     "Year":null,
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINFDAO":{
+  {
     "Course":"Dise\u00f1o Avanzado Orientado a Objetos",
+    "ID":"GIINFDAO",
     "Year":null,
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINFSEGI2":{
+  {
     "Course":"Seguridad Inform\u00e1tica II",
+    "ID":"GIINFSEGI2",
     "Year":null,
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINFSISINTN":{
+  {
     "Course":"Sistemas de Inteligencia de Negocios",
+    "ID":"GIINFSISINTN",
     "Year":null,
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINFSISTD2":{
+  {
     "Course":"Sistemas Distribuidos II",
+    "ID":"GIINFSISTD2",
     "Year":null,
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINFADDAT":{
+  {
     "Course":"An\u00e1lisis de Datos",
+    "ID":"GIINFADDAT",
     "Year":null,
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINFBIDAT":{
+  {
     "Course":"Big Data",
+    "ID":"GIINFBIDAT",
     "Year":null,
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINFCOMPG00":{
+  {
     "Course":"Computaci\u00f3n Gr\u00e1fica",
+    "ID":"GIINFCOMPG00",
     "Year":null,
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINFDSDIG":{
+  {
     "Course":"Dise\u00f1o de Sistemas Digitales",
+    "ID":"GIINFDSDIG",
     "Year":null,
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINFEMTEC":{
+  {
     "Course":"Emprendimientos de Tecnolog\u00eda",
+    "ID":"GIINFEMTEC",
     "Year":null,
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINFISOF":{
+  {
     "Course":"Ingenier\u00eda de Software",
+    "ID":"GIINFISOF",
     "Year":null,
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINFRVIRT":{
+  {
     "Course":"Realidad Virtual",
+    "ID":"GIINFRVIRT",
     "Year":null,
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINDAUTOMT":{
+  {
     "Course":"Automatizaci\u00f3n",
+    "ID":"GIINDAUTOMT",
     "Year":null,
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINFINTEC":{
+  {
     "Course":"Innovaci\u00f3n Tecnol\u00f3gica",
+    "ID":"GIINFINTEC",
     "Year":null,
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINFRVA":{
+  {
     "Course":"Rob\u00f3tica y Visi\u00f3n Artificial",
+    "ID":"GIINFRVA",
     "Year":null,
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINDSSOPDEC":{
+  {
     "Course":"Sistema de Soporte de Decisiones",
+    "ID":"GIINDSSOPDEC",
     "Year":null,
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINFSCOM":{
+  {
     "Course":"Sistemas de Comunicaciones",
+    "ID":"GIINFSCOM",
     "Year":null,
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINFSISTEXP":{
+  {
     "Course":"Sistemas Expertos",
+    "ID":"GIINFSISTEXP",
     "Year":null,
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINFOP3":{
+  {
     "Course":"Teor\u00eda de la Computaci\u00f3n",
+    "ID":"GIINFOP3",
     "Year":null,
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINFTP":{
+  {
     "Course":"Teor\u00eda de la Programaci\u00f3n",
+    "ID":"GIINFTP",
     "Year":null,
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINDFISIII":{
+  {
     "Course":"F\u00edsica III",
+    "ID":"GIINDFISIII",
     "Year":null,
     "Semester":null,
     "Credits":"15.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINFLOG":{
+  {
     "Course":"L\u00f3gica",
+    "ID":"GIINFLOG",
     "Year":null,
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINFMRR":{
+  {
     "Course":"Medios de Representaci\u00f3n",
+    "ID":"GIINFMRR",
     "Year":null,
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINDQUI1":{
+  {
     "Course":"Qu\u00edmica I",
+    "ID":"GIINDQUI1",
     "Year":null,
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINDSISINF":{
+  {
     "Course":"Sistemas de Informaci\u00f3n Gerencial",
+    "ID":"GIINDSISINF",
     "Year":null,
     "Semester":null,
     "Credits":"8.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINFCBSEMB":{
+  {
     "Course":"Conceptos B\u00e1sicos de Sistemas Embebidos",
+    "ID":"GIINFCBSEMB",
     "Year":null,
     "Semester":null,
     "Credits":"5.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINFINTROIA":{
+  {
     "Course":"Introducci\u00f3n a la Inteligencia Artificial",
+    "ID":"GIINFINTROIA",
     "Year":null,
     "Semester":null,
     "Credits":"5.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINFPRA.PROF":{
+  {
     "Course":"Pr\u00e1ctica Profesional Supervisada",
+    "ID":"GIINFPRA.PROF",
     "Year":null,
     "Semester":null,
     "Credits":"33.00",
     "Prerequisites to Take":"(1, Aprobado), (2, Aprobado), (3, Aprobado)",
     "Prerequisites to Pass":"(1, Aprobado), (2, Aprobado), (3, Aprobado)"
   },
-  "GFIEXTVU":{
+  {
     "Course":"Programa de Vida Universitaria",
+    "ID":"GFIEXTVU",
     "Year":null,
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINFTEOE":{
+  {
     "Course":"Taller de Expresi\u00f3n Oral y Escrita",
+    "ID":"GIINFTEOE",
     "Year":null,
     "Semester":null,
     "Credits":"2.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GEXTING":{
+  {
     "Course":"Ingl\u00e9s Nivel I",
+    "ID":"GEXTING",
     "Year":null,
     "Semester":null,
     "Credits":null,
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GEXTILEV2":{
+  {
     "Course":"Ingl\u00e9s Nivel II",
+    "ID":"GEXTILEV2",
     "Year":null,
     "Semester":null,
     "Credits":null,
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   },
-  "GIINFSCP":{
+  {
     "Course":"Seminario de Programaci\u00f3n",
+    "ID":"GIINFSCP",
     "Year":null,
     "Semester":null,
     "Credits":"3.00",
     "Prerequisites to Take":null,
     "Prerequisites to Pass":null
   }
-}
+]
