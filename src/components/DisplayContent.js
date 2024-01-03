@@ -21,7 +21,7 @@ export const DisplayContent = ({selectedOption, onReturn, courses}) => {
             <FileUpload />
             <Graph courses={courses}/>
             <div id="pde">
-                <div class="cuatrimestre">
+                <div className="cuatrimestre">
                     <h2>Curso de Ingreso</h2>
                     <div>
                         <Nodee nodeId='mat' name="Matemática"/>
@@ -30,10 +30,10 @@ export const DisplayContent = ({selectedOption, onReturn, courses}) => {
                         <Nodee nodeId='fis' name="Física"/>
                     </div>
 
-                    {/* <li class="node">Matemática</li>
-                    <li class="node">Física</li> */}
+                    {/* <li className="node">Matemática</li>
+                    <li className="node">Física</li> */}
                 </div>
-                <div class="cuatrimestre">
+                <div className="cuatrimestre">
                     <h2>Primer Cuatrimestre</h2>
 
                     <div>
@@ -51,13 +51,13 @@ export const DisplayContent = ({selectedOption, onReturn, courses}) => {
                     <div>
                         <Nodee nodeId='prog' name="Programación I"/>
                     </div>
-                    {/* <li class="node">Análisis Matemático I</li>
-                    <li class="node">Álgebra I</li>
-                    <li class="node">Introducción a Ingeniería</li>
-                    <li class="node">Filosofía General</li>
-                    <li class="node">Programación I</li> */}
+                    {/* <li className="node">Análisis Matemático I</li>
+                    <li className="node">Álgebra I</li>
+                    <li className="node">Introducción a Ingeniería</li>
+                    <li className="node">Filosofía General</li>
+                    <li className="node">Programación I</li> */}
                 </div>
-                <div class="cuatrimestre">
+                <div className="cuatrimestre">
                     <h2>Segundo Cuatrimestre</h2>
                     <div>
                         <Nodee nodeId='anmat2' name="Análisis Matemático II"/>
@@ -74,11 +74,11 @@ export const DisplayContent = ({selectedOption, onReturn, courses}) => {
                     <div>
                         <Nodee nodeId='prog2' name="Programación II"/>
                     </div>
-                    {/* <li class="node">Análisis Matemático II</li>
-                    <li class="node">Álgebra II</li>
-                    <li class="node">Física Mecánica</li>
-                    <li class="node">Técnicas Digitales</li>
-                    <li class="node">Programación II</li> */}
+                    {/* <li className="node">Análisis Matemático II</li>
+                    <li className="node">Álgebra II</li>
+                    <li className="node">Física Mecánica</li>
+                    <li className="node">Técnicas Digitales</li>
+                    <li className="node">Programación II</li> */}
                 </div>
 
                 {/* Define edges */}

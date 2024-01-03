@@ -1,26 +1,19 @@
-:root {
-    --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-
 * {
     box-sizing: border-box;
 }
 
 body {
     background-color: #f7f7f7;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
     min-height: 100vh;
     margin: 0;
     font-family: 'Lato', sans-serif;
     font-size: 18px;
-}
-
-.container {
-    margin: 30px auto;
-    width: 400px;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -159,4 +152,40 @@ input[type='number'] {
     display: flex;
     justify-content: space-between;
     column-count: 11;
+}
+
+.courses-container {
+    position: relative;
+}
+
+.semester-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 750px;
+    width: 100%;
+    display: flex;
+    position: static;
+    overflow-x: auto;
+    white-space: nowrap;
+    background: #333333;
+}
+
+.semester {
+    padding: 10px 0 10px 0;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.node-div {
+    padding: 50px;
+    margin-bottom: 10px;
+}
+
+.other {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.other-div {
+    margin-bottom: 10px;
 }
