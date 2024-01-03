@@ -2,8 +2,9 @@ import React from 'react';
 import {FileUpload} from "./FileUpload";
 import {Nodee} from "./Nodee"
 import {Edge} from "./Edge"
+import {Graph} from "./Graph";
 
-export const DisplayContent = ({selectedOption, onReturn}) => {
+export const DisplayContent = ({selectedOption, onReturn, courses}) => {
 
     const planMap = new Map ([
         ["ing-inf-23", "Ingeniería Infromática Plan 2023"],
@@ -18,7 +19,7 @@ export const DisplayContent = ({selectedOption, onReturn}) => {
             <p>Plan</p>
             <p>Selected Option: {planMap.get(selectedOption)}</p>
             <FileUpload />
-
+            <Graph courses={courses}/>
             <div id="pde">
                 <div class="cuatrimestre">
                     <h2>Curso de Ingreso</h2>

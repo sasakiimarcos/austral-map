@@ -19,6 +19,9 @@ function App() {
         // You can perform additional actions if needed
     };
 
+    const plan = require('./data/plan.json'); //with path
+
+
   return (
     <div className="App">
         <Header />
@@ -27,6 +30,7 @@ function App() {
                 <DisplayContent
                     selectedOption={selectedOption}
                     onReturn={handleReturnToOriginalPage}
+                    courses={plan}
                 />
             ) : (
                 <Options onSubmit={handleFormSubmit} />
