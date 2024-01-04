@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/austral-map/static/css/main.b5739ae1.css",
-    "main.js": "/austral-map/static/js/main.12f4c279.js",
+    "main.css": "/austral-map/static/css/main.9b1dedb9.css",
+    "main.js": "/austral-map/static/js/main.691b7c64.js",
     "static/js/787.3c0d1a87.chunk.js": "/austral-map/static/js/787.3c0d1a87.chunk.js",
     "index.html": "/austral-map/index.html",
-    "main.b5739ae1.css.map": "/austral-map/static/css/main.b5739ae1.css.map",
-    "main.12f4c279.js.map": "/austral-map/static/js/main.12f4c279.js.map",
+    "main.9b1dedb9.css.map": "/austral-map/static/css/main.9b1dedb9.css.map",
+    "main.691b7c64.js.map": "/austral-map/static/js/main.691b7c64.js.map",
     "787.3c0d1a87.chunk.js.map": "/austral-map/static/js/787.3c0d1a87.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5739ae1.css",
-    "static/js/main.12f4c279.js"
+    "static/css/main.9b1dedb9.css",
+    "static/js/main.691b7c64.js"
   ]
 }
