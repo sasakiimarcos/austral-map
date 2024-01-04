@@ -2,13 +2,6 @@ import {Nodee} from "./Nodee";
 import React from "react";
 import {Edge} from "./Edge";
 
-//Aux function
-function applyStyles(){
-    setStyle({
-        backgroundColor: "green"
-    });
-};
-
 
 
 export const Graph = ({ courses }) =>  {
@@ -52,7 +45,7 @@ export const Graph = ({ courses }) =>  {
 
                             return (
                                 <div className='node-div'>
-                                    <Nodee key={course.ID} nodeId={course.ID} name={course.Course} onClick={applyStyles} />
+                                    <Nodee key={course.ID} nodeId={course.ID} name={course.Course}/>
                                     {codesList.map(prerequisite => (
                                         <Edge start={prerequisite} end={course.ID}/>
                                     ))}
