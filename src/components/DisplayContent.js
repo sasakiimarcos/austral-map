@@ -14,8 +14,7 @@ export const DisplayContent = ({selectedOption, onReturn, courses}) => {
     ])
 
     return (
-        <div>
-            {/* Content to display after form submission */}
+        <div className='content'>
             <p>Plan</p>
             <p>Selected Option: {planMap.get(selectedOption)}</p>
             <FileUpload />

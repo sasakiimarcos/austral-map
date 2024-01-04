@@ -25,17 +25,15 @@ function App() {
   return (
     <div className="App">
         <Header />
-        <div>
-            {formSubmitted ? (
-                <DisplayContent
-                    selectedOption={selectedOption}
-                    onReturn={handleReturnToOriginalPage}
-                    courses={plan}
-                />
-            ) : (
-                <Options onSubmit={handleFormSubmit} />
-            )}
-        </div>
+        {formSubmitted ? (
+            <DisplayContent
+                selectedOption={selectedOption}
+                onReturn={handleReturnToOriginalPage}
+                courses={plan}
+            />
+        ) : (
+            <Options onSubmit={handleFormSubmit} />
+        )}
     </div>
   );
 }

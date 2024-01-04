@@ -19,6 +19,7 @@ body {
 h1 {
     letter-spacing: 1px;
     margin: 0;
+    text-align: center;
 }
 
 h3 {
@@ -140,6 +141,32 @@ input[type='number'] {
 
 .list li:hover .delete-btn {
     opacity: 1;
+}
+
+.App {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    padding: 20px;
+    width: 100%;
+}
+
+.options {
+    display: flex;
+}
+
+.options button {
+    padding: 7px;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+.content {
+    width: 100%;
 }
 
 .cuatrimestre{
