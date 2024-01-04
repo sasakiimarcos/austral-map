@@ -1,5 +1,6 @@
 import {Nodee} from "./Nodee";
 import React from "react";
+import {Edge} from "./Edge";
 
 export const Graph = ({ courses }) =>  {
 
@@ -30,15 +31,29 @@ export const Graph = ({ courses }) =>  {
                 {Object.entries(groupedCourses).map(([key, coursesGroup]) => (
                     <div key={key} className='semester'>
                         <h2>{`Año ${coursesGroup[0].Year}, Cuatri ${coursesGroup[0].Semester}`}</h2>
-                        {coursesGroup.map(course => (
-                            <div className='node-div'>
-                                <Nodee key={course.ID} nodeId={course.ID} name={course.Course} />
-                            </div>
-                        ))}
+                        {coursesGroup.map(course => {
+                            const regex = /\(([^,]+),\s*Regularizada\)/g;
+
+                            const codesList = [];
+                            let match;
+                            while ((match = regex.exec(course['Prerequisites to Take'])) !== null) {
+                                const code = match[1];
+                                codesList.push(code);
+                            }
+
+                            return (
+                                <div className='node-div'>
+                                    <Nodee key={course.ID} nodeId={course.ID} name={course.Course} />
+                                    {codesList.map(prerequisite => (
+                                        <Edge start={prerequisite} end={course.ID}/>
+                                    ))}
+                                </div>
+                            )
+                        })}
                     </div>
                 ))}
             </div>
-            <div>
+            <div className='other-container'>
                 {otherCourses.map((courses) => (
                     <div key={courses[0]} className='other'>
                         <h2>{`${courses[0]}`}</h2>

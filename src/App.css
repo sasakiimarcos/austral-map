@@ -161,10 +161,10 @@ input[type='number'] {
 .semester-container {
     padding-left: 20px;
     padding-right: 20px;
-    height: 750px;
+    height: 700px;
     width: 100%;
     display: flex;
-    position: static;
+    position: absolute;
     overflow-x: auto;
     white-space: nowrap;
     background: #333333;
@@ -174,11 +174,28 @@ input[type='number'] {
     padding: 10px 0 10px 0;
     display: inline-block;
     margin-right: 20px;
+    position: relative;
+}
+
+.semester h2 {
+    text-align: center;
 }
 
 .node-div {
-    padding: 50px;
+    padding: 25px;
     margin-bottom: 10px;
+    position: relative;
+}
+
+.node-div button {
+    z-index: 1;
+    border-radius: 12px;
+    position: relative;
+}
+
+.other-container {
+    padding-top: 700px;
+    display: flex;
 }
 
 .other {
