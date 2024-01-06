@@ -34,11 +34,13 @@ export const FileUpload =  () => {
         return courseMap;
     }
     return (
-        <div>
-            <label>Subir progreso actual</label>
-            <form>
-                <input type="file" accept=".xls,.xlsx" onChange={handleFile}/>
-            </form>
+        <div className='file-upload'>
+            <label>
+                <form>
+                    <input type="file" accept=".xls,.xlsx" onChange={handleFile}/>
+                </form>
+                Subir progreso actual
+            </label>
         </div>
     )
 }

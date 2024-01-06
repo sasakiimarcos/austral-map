@@ -15,8 +15,7 @@ export const DisplayContent = ({selectedOption, onReturn, courses}) => {
 
     return (
         <div className='content'>
-            <p>Plan</p>
-            <p>Selected Option: {planMap.get(selectedOption)}</p>
+            <p>Plan Elegido: {planMap.get(selectedOption)}</p>
             <FileUpload />
             <Graph courses={courses}/>
             <div id="pde">
@@ -87,7 +86,7 @@ export const DisplayContent = ({selectedOption, onReturn, courses}) => {
                 <Edge start="anmat" end="fismec"/>
                 <Edge start="prog" end="td"/>
             </div>
-            <button onClick={onReturn}>Return to Original Page</button>
+            <button onClick={onReturn} className='return-button'>Return to Original Page</button>
         </div>    
     )
 }

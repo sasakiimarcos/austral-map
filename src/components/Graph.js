@@ -32,7 +32,7 @@ export const Graph = ({ courses }) =>  {
             <div className='semester-container'>
                 {Object.entries(groupedCourses).map(([key, coursesGroup]) => (
                     <div key={key} className='semester'>
-                        <h2>{`Año ${coursesGroup[0].Year}, Cuatri ${coursesGroup[0].Semester}`}</h2>
+                        <h2 style={{color:'#dedede'}}>{`${(coursesGroup[0].Year - 1) * 2 + coursesGroup[0].Semester}C`}</h2>
                         {coursesGroup.map(course => {
                             const regex = /\(([^,]+),\s*Regularizada\)/g;
 
@@ -58,12 +58,16 @@ export const Graph = ({ courses }) =>  {
             <div className='other-container'>
                 {otherCourses.map((courses) => (
                     <div key={courses[0]} className='other'>
-                        <h2>{`${courses[0]}`}</h2>
-                        {courses[1].map(course => (
-                            <div className='other-div'>
-                                <Nodee key={course.ID} nodeId={course.ID} name={course.Course} />
-                            </div>
-                        ))}
+                        <div className='other-title'>
+                            <h2>{`${courses[0]}`}</h2>
+                        </div>
+                        <div className='other-courses'>
+                            {courses[1].map(course => (
+                                <div className='other-div'>
+                                    <Nodee key={course.ID} nodeId={course.ID} name={course.Course} />
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 ))}
             </div>

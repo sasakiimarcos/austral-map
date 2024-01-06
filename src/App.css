@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #f7f7f7;
+    background-color: #2c2b2b;
     /*display: flex;*/
     /*flex-direction: column;*/
     /*align-items: center;*/
@@ -17,12 +17,18 @@ body {
 }
 
 h1 {
+    color: #dedede;
     letter-spacing: 1px;
     margin: 0;
     text-align: center;
 }
 
+h2 {
+    color: #dedede;
+}
+
 h3 {
+    color: #dedede;
     border-bottom: 1px solid #bbb;
     padding-bottom: 10px;
     margin: 40px 0 10px;
@@ -31,6 +37,35 @@ h3 {
 h4 {
     margin: 0;
     text-transform: uppercase;
+}
+
+p {
+    color: #dedede;
+}
+
+select {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -webkit-padding-end: 20px;
+    -moz-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -moz-padding-start: 2px;
+    background-color: #a9a9a9; /* Fallback color if gradients are not supported */
+    background-position: center right;
+    background-repeat: no-repeat;
+    border: 1px solid #AAA;
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    color: #282828;
+    font-size: inherit;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .inc-exp-container {
@@ -167,6 +202,7 @@ input[type='number'] {
 
 .content {
     width: 100%;
+    text-align: center;
 }
 
 .cuatrimestre{
@@ -186,9 +222,9 @@ input[type='number'] {
 }
 
 .semester-container {
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 700px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 650px;
     width: 100%;
     display: flex;
     position: absolute;
@@ -198,38 +234,129 @@ input[type='number'] {
 }
 
 .semester {
-    padding: 10px 0 10px 0;
+    /*padding: 5px 0 5px 0;*/
     display: inline-block;
     margin-right: 20px;
     position: relative;
 }
 
 .semester h2 {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
     text-align: center;
 }
 
 .node-div {
-    padding: 25px;
+    padding: 10px;
     margin-bottom: 10px;
     position: relative;
 }
 
-.node-div button {
+.course-button {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
     z-index: 1;
     border-radius: 12px;
     position: relative;
+    font-size: 12px;
+    width: 100%;
+    white-space: normal;
+    padding: 10px 5px;
+    text-align: center;
+    background: #dedede;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.course-button:hover{
+    opacity: 1;
+    background: dimgray;
+    color: #dedede;
 }
 
 .other-container {
-    padding-top: 700px;
+    padding-top: 650px;
     display: flex;
+
 }
 
 .other {
-    display: inline-block;
+    flex-basis: 100%;
+    text-align: center;
+    flex-direction: column;
     margin-right: 20px;
+    margin-left: 20px;
+    flex-wrap: wrap;
+}
+
+.other-title {
+    width: 100%;
+}
+
+.other-courses {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 700px;
 }
 
 .other-div {
+    width: 20%;
+    margin-left: 40px;
+    margin-right: 40px;
     margin-bottom: 10px;
+}
+
+.file-upload {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px auto;
+    width: 40vh;
+    text-align: center;
+}
+
+.file-upload > label >form > input {
+    display: none;
+}
+
+.file-upload label {
+    border-radius: 10px ;
+    background: #bbbbbb;
+    display: inline-block;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.return-button {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    border-radius: 12px;
+    font-size: 12px;
+    padding: 10px 5px;
+    text-align: center;
+    background: #b7dcb3;
+    transition: 0.25s;
+    cursor: pointer;
+    font-weight: bold;
+    color: #3b3b3b;
+    margin: 30px;
+}
+
+.return-button:hover{
+    opacity: 1;
+    background: dimgray;
+    color: #dedede;
 }
