@@ -45,7 +45,7 @@ export const Graph = ({ courses }) =>  {
 
                             return (
                                 <div className='node-div'>
-                                    <Nodee key={course.ID} nodeId={course.ID} name={course.Course}/>
+                                    <Nodee key={course.ID} nodeId={course.ID} name={course.Course} type={'course'}/>
                                     {codesList.map(prerequisite => (
                                         <Edge start={prerequisite} end={course.ID}/>
                                     ))}
@@ -64,7 +64,7 @@ export const Graph = ({ courses }) =>  {
                         <div className='other-courses'>
                             {courses[1].map(course => (
                                 <div className='other-div'>
-                                    <Nodee key={course.ID} nodeId={course.ID} name={course.Course} />
+                                    <Nodee key={course.ID} nodeId={course.ID} name={course.Course} type={'elective'} />
                                 </div>
                             ))}
                         </div>
