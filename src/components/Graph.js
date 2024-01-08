@@ -64,7 +64,7 @@ export const Graph = ({ courses }) =>  {
                         <div className='other-courses'>
                             {courses[1].map(course => (
                                 <div className='other-div'>
-                                    <Nodee key={course.ID} nodeId={course.ID} name={course.Course} type={'elective'} />
+                                    <Nodee key={course.ID} nodeId={course.ID} name={course.Course} type={'other'} />
                                 </div>
                             ))}
                         </div>

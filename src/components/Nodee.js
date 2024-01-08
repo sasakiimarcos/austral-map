@@ -6,7 +6,7 @@ export const Nodee = ({nodeId, name, type}) => {
     function changeColour(){
         const node = document.getElementById(nodeId)
         const colour = '#dedede';
-        const elective_colour = 'lightblue'
+        const other_colour = 'lightblue'
         if(type === 'course'){
             if(clicked) {
                 node.style.background = colour
@@ -18,7 +18,7 @@ export const Nodee = ({nodeId, name, type}) => {
             }
         }
         else{
-            node.style.background = elective_colour;
+            node.style.background = other_colour;
         }
     }
 

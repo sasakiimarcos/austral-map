@@ -7,8 +7,8 @@ import {Graph} from "./Graph";
 export const DisplayContent = ({selectedOption, onReturn, courses}) => {
 
     const planMap = new Map ([
-        ["ing-inf-23", "Ingeniería Infromática Plan 2023"],
-        ["ing-inf-10", "Ingeniería Infromática Plan 2010"],
+        ["ing-inf-23", "Ingeniería Informática Plan 2023"],
+        ["ing-inf-10", "Ingeniería Informática Plan 2010"],
         ["ing-ind-23", "Ingeniería Industrial Plan 2023"],
         ["ing-bio-24", "Ingeniería Biomédica Plan 2024"]
     ])
