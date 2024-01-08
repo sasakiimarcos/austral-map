@@ -5,7 +5,6 @@ export const Nodee = ({nodeId, name, type}) => {
     const [clicked, setClick] = useState(false);
     function changeColour(){
         const node = document.getElementById(nodeId)
-        let current;
         const colour = '#dedede';
         const elective_colour = 'lightblue'
         if(type === 'course'){
