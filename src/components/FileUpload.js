@@ -1,8 +1,7 @@
 import React from 'react';
 import * as XLSX from 'xlsx';
 
-export const FileUpload =  () => {
-    
+export const FileUpload =  ({setClasses}) => {
     const handleFile = async (e) => {
         // Reads xls/xlsx file and turns it into an array of arrays
         const file = XLSX.read(await e.target.files[0].arrayBuffer());
@@ -11,7 +10,7 @@ export const FileUpload =  () => {
 
         // Reads every course ID, it's state (undefined, Regularidad, Examen or Promoción) and grade
         // Inserts into map pairs of course ID and an array with state and grade
-        const courseMap = new Map();
+        const courseMap= {};
         var i = 14;
         const regExpId = /\(([^)]+)\)/; // regExp finds string between parentheses
         const regExpGrade = /[0-9.]+/; // regExp extracts the grade
@@ -23,15 +22,16 @@ export const FileUpload =  () => {
                 let codes = regExpId.exec(raw_data[i][0]);
                 let state = raw_data[i][5];
                 let grade = regExpGrade.exec(raw_data[i][4]);
-                courseMap.set(codes[0], [state, grade]);
-                alert(courseMap.get(codes[0]));
+                grade = ((grade.length === 0) ? grade : grade[0])
+                courseMap[codes[0]] = [state, grade];
                 i++;
             }
             catch(err){
                 break;
             }
         }
-        return courseMap;
+        // console.log(courseMap)
+        setClasses(JSON.stringify(courseMap))
     }
     return (
         <div className='file-upload'>
