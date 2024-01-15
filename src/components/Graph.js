@@ -2,9 +2,7 @@ import {Nodee} from "./Nodee";
 import React from "react";
 import {Edge} from "./Edge";
 
-
-
-export const Graph = ({ courses }) =>  {
+export const Graph = ({ courses, coursesStatus }) =>  {
 
     // The following groups the courses by year and semester. Creates a map where the key is composed
     // of year and semester
@@ -22,13 +20,16 @@ export const Graph = ({ courses }) =>  {
         ['Electives', groupedCourses['Electives-null']],
         ['Other Requirements', groupedCourses['Other Requirements-null']]]
 
-    console.log(otherCourses[0][1])
-
     delete groupedCourses['Electives-null']
     delete groupedCourses['Other Requirements-null']
 
+    // courseStatusObj is an object containing the course ID as its key and the respective grade and status as its value
+    // (es el courseMap de franz)
+    const coursesStatusObj = JSON.parse(coursesStatus)
+
     return (
         <div className='courses-container'>
+            {/*<p>Received Map Data: {coursesStatus}</p>*/}
             <div className='semester-container'>
                 {Object.entries(groupedCourses).map(([key, coursesGroup]) => (
                     <div key={key} className='semester'>

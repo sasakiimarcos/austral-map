@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {FileUpload} from "./FileUpload";
 import {Nodee} from "./Nodee"
 import {Edge} from "./Edge"
@@ -13,11 +13,17 @@ export const DisplayContent = ({selectedOption, onReturn, courses}) => {
         ["ing-bio-24", "Ingeniería Biomédica Plan 2024"]
     ])
 
+    const [classStatus, setClassStatus] = useState('{}');
+
+    const handleClass = (courses) => {
+        setClassStatus(courses)
+    }
+
     return (
         <div className='content'>
             <p>Plan Elegido: {planMap.get(selectedOption)}</p>
-            <FileUpload />
-            <Graph courses={courses}/>
+            <FileUpload setClasses={handleClass}/>
+            <Graph courses={courses} coursesStatus={classStatus}/>
             <div id="pde">
                 <div className="cuatrimestre">
                     <h2>Curso de Ingreso</h2>
@@ -87,7 +93,7 @@ export const DisplayContent = ({selectedOption, onReturn, courses}) => {
                 <Edge start="prog" end="td"/>
             </div>
             <button onClick={onReturn} className='return-button'>Return to Original Page</button>
-        </div>    
+        </div>
     )
 }
 
