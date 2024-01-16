@@ -3,25 +3,42 @@ import {useState} from "react";
 import Navbar from "./Navbar"
 export const Nodee = ({nodeId, name, type}) => {
     const [clicked, setClick] = useState(false);
+    const nodes = document.getElementById(nodeId)
     function changeColour(){
-        const node = document.getElementById(nodeId)
         const colour = '#dedede';
         const other_colour = 'lightblue'
         if(type === 'course'){
             if(clicked) {
-                node.style.background = colour
-                setClick(false)
+                nodes.style.background = 'dimgray';
+                setClick(false);
+                nodes.onmouseover = function (){
+                    nodes.style.background = 'dimgray';
+                    if(nodes.style.background === 'dimgray') nodes.style.color = colour;
+                    else nodes.style.color = 'black'
+
+                }
+                nodes.onmouseleave = function (){
+                    nodes.style.background = colour;
+                    nodes.style.color = 'black';
+                }
+
             }
             else{
-                node.style.background = 'green'
-                setClick(true)
+                nodes.style.background = 'green';
+                setClick(true);
+                nodes.onmouseover = function (){
+                    nodes.style.color = colour;
+                }
+                nodes.onmouseleave = function (){
+                    nodes.style.color = 'black';
+                }
+
             }
         }
         else{
-            node.style.background = other_colour;
+            nodes.style.background = other_colour;
         }
     }
-
     function handleClick(){
         changeColour();
         //Here should go the Navbar() function but it doesn't work for now
