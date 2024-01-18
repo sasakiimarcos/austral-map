@@ -61,7 +61,7 @@ export const Nodee = ({nodeId, name, type, hoveredNode, setHoveredNode}) => {
     return (
         <button 
             id={nodeId}
-            onClick={handleClick}
+            onDoubleClick={handleClick}
             onMouseEnter={() => {setHoveredNode(nodeId)}}
             onMouseLeave={() => {setHoveredNode(null)}}
             className='course-button'

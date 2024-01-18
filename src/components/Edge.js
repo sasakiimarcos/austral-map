@@ -12,6 +12,7 @@ export const Edge = ({start, end, hoveredNode}) => {
             start={start}
             end={end}
             ref={arrowRef}
+            style={{position:'absolute'}}
         />
     )
 }
