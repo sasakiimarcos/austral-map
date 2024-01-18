@@ -1,7 +1,8 @@
 import Xarrow from "react-xarrows";
-
+import {useRef} from "react";
 
 export const Edge = ({start, end, hoveredNode}) => {
+    const arrowRef = useRef(null);
     return (
         <Xarrow
             color={'lightBlue'}
@@ -10,6 +11,7 @@ export const Edge = ({start, end, hoveredNode}) => {
             strokeWidth={2}
             start={start}
             end={end}
+            ref={arrowRef}
         />
     )
 }

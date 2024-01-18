@@ -2,6 +2,7 @@ import {Nodee} from "./Nodee";
 import React from "react";
 import {Edge} from "./Edge";
 import { useState } from "react";
+import Draggable from "react-draggable";
 
 export const Graph = ({ courses, coursesStatus }) =>  {
 
@@ -50,6 +51,9 @@ export const Graph = ({ courses, coursesStatus }) =>  {
                             }
 
                             return (
+                                <Draggable
+                                    axis={"y"}
+                                    bounds="parent">
                                 <div className='node-div'>
                                     <Nodee
                                         key={course.ID}
@@ -59,6 +63,7 @@ export const Graph = ({ courses, coursesStatus }) =>  {
                                         hoveredNode={hoveredNode}
                                         setHoveredNode={setHoveredNode}
                                     />
+
                                     {codesList.map(prerequisite => (
                                         <Edge
                                             start={prerequisite}
@@ -66,10 +71,13 @@ export const Graph = ({ courses, coursesStatus }) =>  {
                                             hoveredNode={hoveredNode}
                                         />
                                     ))}
+
                                 </div>
+                        </Draggable>
                             )
                         })}
                     </div>
+
                 ))}
             </div>
             <div className='other-container'>

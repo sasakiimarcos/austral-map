@@ -67,7 +67,7 @@ export const Nodee = ({nodeId, name, type, hoveredNode, setHoveredNode}) => {
             className='course-button'
             type={type}
             ref={nodeRef}
-            style={{opacity: (hoveredNode === nodeId || hoveredNode === null) ? 1 : 0.25}}
+            style={{opacity: (hoveredNode === nodeId || hoveredNode === null) ? 1 : 0.25, position: 'relative'}}
         >
             {name}
         </button>
