@@ -24,74 +24,7 @@ export const DisplayContent = ({selectedOption, onReturn, courses}) => {
             <p>Plan Elegido: {planMap.get(selectedOption)}</p>
             <FileUpload setClasses={handleClass}/>
             <Graph courses={courses} coursesStatus={classStatus}/>
-            <div id="pde">
-                <div className="cuatrimestre">
-                    <h2>Curso de Ingreso</h2>
-                    <div>
-                        <Nodee nodeId='mat' name="Matemática"/>
-                    </div>
-                    <div>
-                        <Nodee nodeId='fis' name="Física"/>
-                    </div>
-
-                    {/* <li className="node">Matemática</li>
-                    <li className="node">Física</li> */}
-                </div>
-                <div className="cuatrimestre">
-                    <h2>Primer Cuatrimestre</h2>
-
-                    <div>
-                        <Nodee nodeId='anmat' name="Análisis Matemático I"/>
-                    </div>
-                    <div>
-                        <Nodee nodeId='alg' name="Álgebra I"/>
-                    </div>
-                    <div>
-                        <Nodee nodeId='ing' name="Introducción a Ingeniería"/>
-                    </div>
-                    <div>
-                        <Nodee nodeId='fil' name="Filosofía General"/>
-                    </div>
-                    <div>
-                        <Nodee nodeId='prog' name="Programación I"/>
-                    </div>
-                    {/* <li className="node">Análisis Matemático I</li>
-                    <li className="node">Álgebra I</li>
-                    <li className="node">Introducción a Ingeniería</li>
-                    <li className="node">Filosofía General</li>
-                    <li className="node">Programación I</li> */}
-                </div>
-                <div className="cuatrimestre">
-                    <h2>Segundo Cuatrimestre</h2>
-                    <div>
-                        <Nodee nodeId='anmat2' name="Análisis Matemático II"/>
-                    </div>
-                    <div>
-                        <Nodee nodeId='alg2' name="Álgebra II"/>
-                    </div>
-                    <div>
-                        <Nodee nodeId='fismec' name="Física Mecánica"/>
-                    </div>
-                    <div>
-                        <Nodee nodeId='td' name="Técnicas Digitales"/>
-                    </div>
-                    <div>
-                        <Nodee nodeId='prog2' name="Programación II"/>
-                    </div>
-                    {/* <li className="node">Análisis Matemático II</li>
-                    <li className="node">Álgebra II</li>
-                    <li className="node">Física Mecánica</li>
-                    <li className="node">Técnicas Digitales</li>
-                    <li className="node">Programación II</li> */}
-                </div>
-
-                {/* Define edges */}
-                <Edge start="anmat" end="anmat2"/>
-                <Edge start="alg" end="alg2"/>
-                <Edge start="prog" end="prog2"/>
-                <Edge start="anmat" end="fismec"/>
-                <Edge start="prog" end="td"/>
-            </div>
+            
             <button onClick={onReturn} className='return-button'>Return to Original Page</button>
         </div>
     )
