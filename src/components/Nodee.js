@@ -1,16 +1,11 @@
 import React from "react";
 import {useState, useRef} from "react";
-import Navbar from "./Navbar"
 export const Nodee = ({nodeId, name, type, hoveredNode, setHoveredNode}) => {
     const [clicked, setClick] = useState(false);
     const nodeRef = useRef(null);
-
-    
-
     function changeColor(){
         
         const course_color = '#dedede';
-        const other_color = 'darksalmon'
         if(type === 'course'){
             if(clicked) {
                 nodeRef.current.style.background = 'dimgray';
@@ -49,9 +44,6 @@ export const Nodee = ({nodeId, name, type, hoveredNode, setHoveredNode}) => {
 
             }
         }
-        else{
-            nodeRef.current.style.background = other_color;
-        }
     }
     function handleClick(){
         changeColor();
@@ -67,7 +59,7 @@ export const Nodee = ({nodeId, name, type, hoveredNode, setHoveredNode}) => {
             className='course-button'
             type={type}
             ref={nodeRef}
-            style={{opacity: (hoveredNode === nodeId || hoveredNode === null) ? 1 : 0.25, position: 'relative'}}
+            style={{opacity: (hoveredNode === nodeId || hoveredNode === null) ? 1 : 0.25, position: 'relative', background:(type !=='course')?'darksalmon': '#dedede'}}
         >
             {name}
         </button>
