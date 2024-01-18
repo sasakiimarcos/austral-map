@@ -1,6 +1,7 @@
 import {Nodee} from "./Nodee";
 import React from "react";
 import {Edge} from "./Edge";
+import { useState } from "react";
 
 export const Graph = ({ courses, coursesStatus }) =>  {
 
@@ -27,6 +28,10 @@ export const Graph = ({ courses, coursesStatus }) =>  {
     // (es el courseMap de franz)
     const coursesStatusObj = JSON.parse(coursesStatus)
 
+    // We'll keep the node which is currently hovered in a state and pass down
+    // both this state and the state modifier to each node
+    const [hoveredNode, setHoveredNode] = useState(null);
+
     return (
         <div className='courses-container'>
             {/*<p>Received Map Data: {coursesStatus}</p>*/}
@@ -46,9 +51,20 @@ export const Graph = ({ courses, coursesStatus }) =>  {
 
                             return (
                                 <div className='node-div'>
-                                    <Nodee key={course.ID} nodeId={course.ID} name={course.Course} type={'course'}/>
+                                    <Nodee
+                                        key={course.ID}
+                                        nodeId={course.ID}
+                                        name={course.Course}
+                                        type={'course'}
+                                        hoveredNode={hoveredNode}
+                                        setHoveredNode={setHoveredNode}
+                                    />
                                     {codesList.map(prerequisite => (
-                                        <Edge start={prerequisite} end={course.ID}/>
+                                        <Edge
+                                            start={prerequisite}
+                                            end={course.ID}
+                                            hoveredNode={hoveredNode}
+                                        />
                                     ))}
                                 </div>
                             )
@@ -65,7 +81,7 @@ export const Graph = ({ courses, coursesStatus }) =>  {
                         <div className='other-courses'>
                             {courses[1].map(course => (
                                 <div className='other-div'>
-                                    <Nodee key={course.ID} nodeId={course.ID} name={course.Course} type={'other'} />
+                                    <Nodee key={course.ID} nodeId={course.ID} name={course.Course} type={'other'} hoveredNode={hoveredNode} setHoveredNode={setHoveredNode} />
                                 </div>
                             ))}
                         </div>

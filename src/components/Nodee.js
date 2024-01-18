@@ -1,10 +1,14 @@
 import React from "react";
 import {useState, useRef} from "react";
 import Navbar from "./Navbar"
-export const Nodee = ({nodeId, name, type}) => {
+export const Nodee = ({nodeId, name, type, hoveredNode, setHoveredNode}) => {
     const [clicked, setClick] = useState(false);
     const nodeRef = useRef(null);
+
+    
+
     function changeColor(){
+        
         const course_color = '#dedede';
         const other_color = 'darksalmon'
         if(type === 'course'){
@@ -12,12 +16,17 @@ export const Nodee = ({nodeId, name, type}) => {
                 nodeRef.current.style.background = 'dimgray';
                 setClick(false);
                 nodeRef.current.onmouseover = function (){
+                    setHoveredNode(nodeId);
+
                     nodeRef.current.style.background = 'dimgray';
                     if(nodeRef.current.style.background === 'dimgray') nodeRef.current.style.color = course_color;
                     else nodeRef.current.style.color = 'black'
 
                 }
                 nodeRef.current.onmouseleave = function (){
+                    // Now that no node is hovered, return to full opacity
+                    setHoveredNode(null);
+
                     nodeRef.current.style.background = course_color;
                     nodeRef.current.style.color = 'black';
                 }
@@ -27,9 +36,14 @@ export const Nodee = ({nodeId, name, type}) => {
                 nodeRef.current.style.background = 'green';
                 setClick(true);
                 nodeRef.current.onmouseover = function (){
+                    setHoveredNode(nodeId);
+
                     nodeRef.current.style.color = course_color;
                 }
                 nodeRef.current.onmouseleave = function (){
+                    // Now that no node is hovered, return to full opacity
+                    setHoveredNode(null);
+
                     nodeRef.current.style.color = 'black';
                 }
 
@@ -45,7 +59,16 @@ export const Nodee = ({nodeId, name, type}) => {
     }
 
     return (
-        <button id={nodeId} onClick={handleClick} className='course-button' type={type} ref={nodeRef}>
+        <button 
+            id={nodeId}
+            onClick={handleClick}
+            onMouseEnter={() => {setHoveredNode(nodeId)}}
+            onMouseLeave={() => {setHoveredNode(null)}}
+            className='course-button'
+            type={type}
+            ref={nodeRef}
+            style={{opacity: (hoveredNode === nodeId || hoveredNode === null) ? 1 : 0.25}}
+        >
             {name}
         </button>
     )
