@@ -31,7 +31,7 @@ export const Graph = ({ courses, coursesStatus }) =>  {
 
     // We'll keep the node which is currently hovered in a state and pass down
     // both this state and the state modifier to each node
-    const [hoveredNode, setHoveredNode] = useState(null);
+    const [highlightedNodes, setHighlightedNodes] = useState(new Set());
 
     return (
         <div className='courses-container'>
@@ -60,15 +60,16 @@ export const Graph = ({ courses, coursesStatus }) =>  {
                                         nodeId={course.ID}
                                         name={course.Course}
                                         type={'course'}
-                                        hoveredNode={hoveredNode}
-                                        setHoveredNode={setHoveredNode}
+                                        highlightedNodes={highlightedNodes}
+                                        setHighlightedNodes={setHighlightedNodes}
+                                        adyacentNodes={codesList}
                                     />
 
                                     {codesList.map(prerequisite => (
                                         <Edge
                                             start={prerequisite}
                                             end={course.ID}
-                                            hoveredNode={hoveredNode}
+                                            highlightedNodes={highlightedNodes}
                                         />
                                     ))}
 
@@ -89,7 +90,7 @@ export const Graph = ({ courses, coursesStatus }) =>  {
                         <div className='other-courses'>
                             {courses[1].map(course => (
                                 <div className='other-div'>
-                                    <Nodee key={course.ID} nodeId={course.ID} name={course.Course} type={'other'} hoveredNode={hoveredNode} setHoveredNode={setHoveredNode} />
+                                    <Nodee key={course.ID} nodeId={course.ID} name={course.Course} type={'other'} highlightedNodes={highlightedNodes} setHighlightedNodes={setHighlightedNodes} />
                                 </div>
                             ))}
                         </div>

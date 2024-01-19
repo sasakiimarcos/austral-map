@@ -1,8 +1,21 @@
 import React from "react";
 import {useState, useRef} from "react";
-export const Nodee = ({nodeId, name, type, hoveredNode, setHoveredNode}) => {
+export const Nodee = ({nodeId, name, type, highlightedNodes, setHighlightedNodes, adyacentNodes}) => {
     const [clicked, setClick] = useState(false);
     const nodeRef = useRef(null);
+
+    function collectHighlighted() {
+        // This function may be modified if the JSON is changed in
+        // a future in order to include, for each course, those other
+        // subjects the former is a prerequisite of.
+
+        let highlighted = new Set(adyacentNodes);
+        highlighted.add(nodeId);
+
+        console.log(...highlighted);
+        setHighlightedNodes(highlighted);
+    }
+
     function changeColor(){
         if(type === 'course'){
             if(clicked) {
@@ -64,18 +77,17 @@ export const Nodee = ({nodeId, name, type, hoveredNode, setHoveredNode}) => {
         <button 
             id={nodeId}
             onDoubleClick={handleClick}
-            onMouseEnter={() => {
-                setHoveredNode(nodeId)
-                enterNode()
-            }}
+            onMouseEnter={collectHighlighted}
             onMouseLeave={() => {
-                setHoveredNode(null)
+                setHighlightedNodes(new Set())
                 leaveNode()
             }}
             className='course-button'
             type={type}
             ref={nodeRef}
-            style={{opacity: (hoveredNode === nodeId || hoveredNode === null) ? 1 : 0.25, position: 'relative', background:(type !=='course')?'darksalmon': '#dedede'}}
+            style={{opacity: (highlightedNodes.has(nodeId) || highlightedNodes.size === 0) ? 1 : 0.25,
+                    position: 'relative',
+                    background:(type !=='course')?'darksalmon': '#dedede'}}
         >
             {name}
         </button>
