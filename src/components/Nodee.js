@@ -23,32 +23,39 @@ export const Nodee = ({nodeId, name, type, hoveredNode, setHoveredNode}) => {
     }
 
     function enterNode() {
-        if(clicked) {
-            // nodeRef.current.style.background = 'green';
-            if(nodeRef.current.style.background === 'dimgray') {
-                nodeRef.current.style.color = '#dedede';
-            }
-            else {
-                nodeRef.current.style.color = 'white'
-                nodeRef.current.style.background = '#589f3c';
-            }
+        if(type === 'course') {
+            if (clicked) {
+                // nodeRef.current.style.background = 'green';
+                if (nodeRef.current.style.background === 'dimgray') {
+                    nodeRef.current.style.color = '#dedede';
+                } else {
+                    nodeRef.current.style.color = 'white'
+                    nodeRef.current.style.background = '#589f3c';
+                }
 
-        }
-        else{
-            nodeRef.current.style.color = '#dedede';
-            nodeRef.current.style.background = 'dimgray'
+            } else {
+                nodeRef.current.style.color = '#dedede';
+                nodeRef.current.style.background = 'dimgray'
+            }
+        } else {
+            nodeRef.current.style.background = '#c75a1b';
+            nodeRef.current.style.color = 'white';
         }
     }
 
     function leaveNode() {
-        if(clicked) {
-            // Now that no node is hovered, return to full opacity
-            nodeRef.current.style.background = 'green';
-            nodeRef.current.style.color = 'light gray';
-        }
-        else{
-            // Now that no node is hovered, return to full opacity
-            nodeRef.current.style.background = '#dedede';
+        if(type === 'course') {
+            if (clicked) {
+                // Now that no node is hovered, return to full opacity
+                nodeRef.current.style.background = 'green';
+                nodeRef.current.style.color = 'light gray';
+            } else {
+                // Now that no node is hovered, return to full opacity
+                nodeRef.current.style.background = '#dedede';
+                nodeRef.current.style.color = 'black';
+            }
+        } else {
+            nodeRef.current.style.background = 'darksalmon';
             nodeRef.current.style.color = 'black';
         }
     }
