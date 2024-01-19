@@ -7,10 +7,12 @@ export const Nodee = ({nodeId, name, type, hoveredNode, setHoveredNode}) => {
         if(type === 'course'){
             if(clicked) {
                 nodeRef.current.style.background = 'dimgray';
+                nodeRef.current.style.color = '#dedede'
                 setClick(false);
             }
             else{
-                nodeRef.current.style.background = 'green';
+                nodeRef.current.style.background = '#589f3c';
+                nodeRef.current.style.color = 'light gray';
                 setClick(true);
             }
         }
@@ -22,23 +24,27 @@ export const Nodee = ({nodeId, name, type, hoveredNode, setHoveredNode}) => {
 
     function enterNode() {
         if(clicked) {
-            nodeRef.current.style.background = 'dimgray';
-            if(nodeRef.current.style.background === 'dimgray') nodeRef.current.style.color = '#dedede';
-            else nodeRef.current.style.color = 'black'
+            // nodeRef.current.style.background = 'green';
+            if(nodeRef.current.style.background === 'dimgray') {
+                nodeRef.current.style.color = '#dedede';
+            }
+            else {
+                nodeRef.current.style.color = 'white'
+                nodeRef.current.style.background = '#589f3c';
+            }
 
         }
         else{
             nodeRef.current.style.color = '#dedede';
             nodeRef.current.style.background = 'dimgray'
-
         }
     }
 
     function leaveNode() {
         if(clicked) {
             // Now that no node is hovered, return to full opacity
-            nodeRef.current.style.background = '#dedede';
-            nodeRef.current.style.color = 'black';
+            nodeRef.current.style.background = 'green';
+            nodeRef.current.style.color = 'light gray';
         }
         else{
             // Now that no node is hovered, return to full opacity
