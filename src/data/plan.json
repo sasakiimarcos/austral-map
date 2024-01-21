@@ -6,7 +6,9 @@
     "Semester":1,
     "Credits":"15.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":"(GIINDAM2, Regularizada), (GIINDFIS1, Regularizada), (GIINDAM3, Aprobada), (GIINFAM4, Aprobada), (GIINDEST1, Regularizada), (GIINDEST2, Aprobada)",
+    "is Prerequisite to Pass of":"(GIINDAM2, Aprobada), (GIINDFIS1, Aprobada), (GIINDEST1, Aprobada)"
   },
   {
     "Course":"\u00c1lgebra I",
@@ -15,7 +17,9 @@
     "Semester":1,
     "Credits":"15.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":"(GIINDAL2, Regularizada), (GIINFAL3, Aprobada), (GIINFMD, Aprobada), (GIINDIOP, Aprobada)",
+    "is Prerequisite to Pass of":"(GIINDAL2, Aprobada)"
   },
   {
     "Course":"Programaci\u00f3n I",
@@ -24,7 +28,9 @@
     "Semester":1,
     "Credits":"15.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":"(GIINFIP2, Regularizada), (GIINFLCD, Regularizada), (GIINFOC, Aprobada), (GIINFAED, Aprobada), (GIINFTE, Aprobada), (GIINFRCDA, Aprobada), (GIINFICO, Aprobada), (GIINFDIN, Aprobada)",
+    "is Prerequisite to Pass of":"(GIINFIP2, Aprobada), (GIINFLCD, Aprobada)"
   },
   {
     "Course":"Introducci\u00f3n a la Ingenier\u00eda",
@@ -33,7 +39,9 @@
     "Semester":1,
     "Credits":"5.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":"(GIINFTE, Regularizada), (GIINDTECOM, Aprobada), (GIINDLEG, Aprobada), (GIINDCON.Y PRE, Aprobada), (GIINDFHUM, Aprobada), (GIINDECON.POL, Aprobada), (GIINFOP1, Aprobada), (GIINFSNEG, Aprobada)",
+    "is Prerequisite to Pass of":"(GIINFTE, Aprobada)"
   },
   {
     "Course":"Filosof\u00eda General",
@@ -42,7 +50,9 @@
     "Semester":1,
     "Credits":"5.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":"(GIINDTE1, Regularizada), (GIINDANTROP, Regularizada), (GIINDETGEN, Aprobada), (GIINDTE2, Aprobada)",
+    "is Prerequisite to Pass of":"(GIINDTE1, Aprobada), (GIINDANTROP, Aprobada)"
   },
   {
     "Course":"An\u00e1lisis Matem\u00e1tico II",
@@ -51,7 +61,9 @@
     "Semester":2,
     "Credits":"15.00",
     "Prerequisites to Take":"(GIINDAM1, Regularizada)",
-    "Prerequisites to Pass":"(GIINDAM1, Aprobada)"
+    "Prerequisites to Pass":"(GIINDAM1, Aprobada)",
+    "is Prerequisite to Take of":"(GIINDAM3, Regularizada), (GIINFAM4, Regularizada)",
+    "is Prerequisite to Pass of":"(GIINDAM3, Aprobada), (GIINFAM4, Aprobada)"
   },
   {
     "Course":"\u00c1lgebra II",
@@ -60,7 +72,9 @@
     "Semester":2,
     "Credits":"15.00",
     "Prerequisites to Take":"(GIINDAL1, Regularizada)",
-    "Prerequisites to Pass":"(GIINDAL1, Aprobada)"
+    "Prerequisites to Pass":"(GIINDAL1, Aprobada)",
+    "is Prerequisite to Take of":"(GIINFAL3, Regularizada), (GIINFMD, Regularizada), (GIINDIOP, Regularizada)",
+    "is Prerequisite to Pass of":"(GIINFAL3, Aprobada), (GIINFMD, Aprobada), (GIINDIOP, Aprobada)"
   },
   {
     "Course":"Programaci\u00f3n II",
@@ -69,7 +83,9 @@
     "Semester":2,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINFPR1, Regularizada)",
-    "Prerequisites to Pass":"(GIINFPR1, Aprobada)"
+    "Prerequisites to Pass":"(GIINFPR1, Aprobada)",
+    "is Prerequisite to Take of":"(GIINFAED, Regularizada), (GIINFADA, Aprobada), (GIINFBD, Aprobada), (GIINFTE, Regularizada), (GIINFL1, Aprobada), (GIINFICO, Regularizada), (GIINFDIN, Regularizada)",
+    "is Prerequisite to Pass of":"(GIINFAED, Aprobada), (GIINFTE, Aprobada), (GIINFICO, Aprobada), (GIINFDIN, Aprobada)"
   },
   {
     "Course":"F\u00edsica General",
@@ -78,7 +94,9 @@
     "Semester":2,
     "Credits":"15.00",
     "Prerequisites to Take":"(GIINDAM1, Regularizada)",
-    "Prerequisites to Pass":"(GIINDAM1, Aprobada)"
+    "Prerequisites to Pass":"(GIINDAM1, Aprobada)",
+    "is Prerequisite to Take of":"(GIINDEYM, Regularizada)",
+    "is Prerequisite to Pass of":"(GIINDEYM, Aprobada)"
   },
   {
     "Course":"T\u00e9cnicas Digitales",
@@ -87,7 +105,9 @@
     "Semester":2,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINFPR1, Regularizada)",
-    "Prerequisites to Pass":"(GIINFPR1, Aprobada)"
+    "Prerequisites to Pass":"(GIINFPR1, Aprobada)",
+    "is Prerequisite to Take of":"(GIINFSISOP, Aprobada), (GIINFICO, Regularizada), (GIINFSEGI, Aprobada)",
+    "is Prerequisite to Pass of":"(GIINFOC, Aprobada), (GIINFRCDA, Aprobada), (GIINFICO, Aprobada)"
   },
   {
     "Course":"Arquitectura de Computadoras",
@@ -95,8 +115,10 @@
     "Year":2,
     "Semester":1,
     "Credits":"8.00",
-    "Prerequisites to Take":"(GIINFLCD, Regularizada), (GIINFPR1, Aprobada)",
-    "Prerequisites to Pass":"(GIINFLCD, Aprobada)"
+    "Prerequisites to Take":"(GIINFPR1, Aprobada)",
+    "Prerequisites to Pass":"(GIINFLCD, Aprobada)",
+    "is Prerequisite to Take of":"(GIINFSISOP, Regularizada), (GIINFPC, Aprobada), (GIINFSEGI, Aprobada)",
+    "is Prerequisite to Pass of":"(GIINFSISOP, Aprobada)"
   },
   {
     "Course":"An\u00e1lisis Matem\u00e1tico III",
@@ -105,7 +127,9 @@
     "Semester":1,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINDAM2, Regularizada), (GIINDAM1, Aprobada)",
-    "Prerequisites to Pass":"(GIINDAM2, Aprobada)"
+    "Prerequisites to Pass":"(GIINDAM2, Aprobada)",
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"\u00c1lgebra III",
@@ -114,7 +138,9 @@
     "Semester":1,
     "Credits":"8.00",
     "Prerequisites to Take":"(GIINDAL2, Regularizada), (GIINDAL1, Aprobada)",
-    "Prerequisites to Pass":"(GIINDAL2, Aprobada)"
+    "Prerequisites to Pass":"(GIINDAL2, Aprobada)",
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Electricidad y Magnetismo",
@@ -123,7 +149,9 @@
     "Semester":1,
     "Credits":"15.00",
     "Prerequisites to Take":"(GIINDFIS1, Regularizada)",
-    "Prerequisites to Pass":"(GIINDFIS1, Aprobada)"
+    "Prerequisites to Pass":"(GIINDFIS1, Aprobada)",
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Algoritmos y Estructuras de Datos",
@@ -132,7 +160,9 @@
     "Semester":1,
     "Credits":"15.00",
     "Prerequisites to Take":"(GIINFIP2, Regularizada), (GIINFPR1, Aprobada)",
-    "Prerequisites to Pass":"(GIINFIP2, Aprobada)"
+    "Prerequisites to Pass":"(GIINFIP2, Aprobada)",
+    "is Prerequisite to Take of":"(GIINFADA, Regularizada), (GIINFBD, Regularizada), (GIINFL1, Regularizada), (GIINFDS, Aprobada), (GIINFL2, Aprobada), (GIINFLP, Aprobada), (GIINFOPMLINF, Aprobada), (GIINFSISTD1, Aprobada)",
+    "is Prerequisite to Pass of":"(GIINFADA, Aprobada), (GIINFBD, Aprobada), (GIINFL1, Aprobada)"
   },
   {
     "Course":"Teolog\u00eda",
@@ -141,7 +171,9 @@
     "Semester":1,
     "Credits":"8.00",
     "Prerequisites to Take":"(GIINDIFI, Regularizada)",
-    "Prerequisites to Pass":"(GIINDIFI, Aprobada)"
+    "Prerequisites to Pass":"(GIINDIFI, Aprobada)",
+    "is Prerequisite to Take of":"(GIINDTE2, Regularizada), (GIINDDOSIG, Aprobada)",
+    "is Prerequisite to Pass of":"(GIINDTE2, Aprobada)"
   },
   {
     "Course":"C\u00e1lculo Num\u00e9rico",
@@ -150,7 +182,9 @@
     "Semester":2,
     "Credits":"8.00",
     "Prerequisites to Take":"(GIINDAM2, Regularizada), (GIINDAM1, Aprobada)",
-    "Prerequisites to Pass":"(GIINDAM2, Aprobada)"
+    "Prerequisites to Pass":"(GIINDAM2, Aprobada)",
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Estad\u00edstica I",
@@ -159,7 +193,9 @@
     "Semester":2,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINDAM1, Regularizada)",
-    "Prerequisites to Pass":"(GIINDAM1, Aprobada)"
+    "Prerequisites to Pass":"(GIINDAM1, Aprobada)",
+    "is Prerequisite to Take of":"(GIINDEST2, Regularizada), (GIINDIOP, Aprobada), (GIINFOPMLINF, Aprobada)",
+    "is Prerequisite to Pass of":"(GIINDEST2, Aprobada)"
   },
   {
     "Course":"Matem\u00e1tica Discreta",
@@ -168,7 +204,9 @@
     "Semester":2,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINDAL2, Regularizada), (GIINDAL1, Aprobada)",
-    "Prerequisites to Pass":"(GIINDAL2, Aprobada)"
+    "Prerequisites to Pass":"(GIINDAL2, Aprobada)",
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"An\u00e1lisis y Dise\u00f1o de Algoritmos",
@@ -177,7 +215,9 @@
     "Semester":2,
     "Credits":"15.00",
     "Prerequisites to Take":"(GIINFAED, Regularizada), (GIINFIP2, Aprobada)",
-    "Prerequisites to Pass":"(GIINFAED, Aprobada)"
+    "Prerequisites to Pass":"(GIINFAED, Aprobada)",
+    "is Prerequisite to Take of":"(GIINFDS, Regularizada), (GIINFINGS, Aprobada), (GIINFLP, Regularizada), (GIINFL3, Aprobada), (GIINFPC, Aprobada)",
+    "is Prerequisite to Pass of":"(GIINFDS, Aprobada), (GIINFLP, Aprobada)"
   },
   {
     "Course":"Antropolog\u00eda",
@@ -186,7 +226,9 @@
     "Semester":2,
     "Credits":"5.00",
     "Prerequisites to Take":"(GIINDIFI, Regularizada)",
-    "Prerequisites to Pass":"(GIINDIFI, Aprobada)"
+    "Prerequisites to Pass":"(GIINDIFI, Aprobada)",
+    "is Prerequisite to Take of":"(GIINDETGEN, Regularizada), (GIINDETPROF, Aprobada)",
+    "is Prerequisite to Pass of":"(GIINDETGEN, Aprobada)"
   },
   {
     "Course":"Sistemas Operativos",
@@ -195,7 +237,9 @@
     "Semester":2,
     "Credits":"8.00",
     "Prerequisites to Take":"(GIINFOC, Regularizada), (GIINFLCD, Aprobada)",
-    "Prerequisites to Pass":"(GIINFOC, Aprobada)"
+    "Prerequisites to Pass":"(GIINFOC, Aprobada)",
+    "is Prerequisite to Take of":"(GIINFPC, Regularizada), (GIINFSEGI, Regularizada), (GIINFSISTD1, Aprobada)",
+    "is Prerequisite to Pass of":"(GIINFPC, Aprobada), (GIINFSEGI, Aprobada)"
   },
   {
     "Course":"Bases de Datos",
@@ -204,7 +248,9 @@
     "Semester":2,
     "Credits":"13.00",
     "Prerequisites to Take":"(GIINFAED, Regularizada), (GIINFIP2, Aprobada)",
-    "Prerequisites to Pass":"(GIINFAED, Aprobada)"
+    "Prerequisites to Pass":"(GIINFAED, Aprobada)",
+    "is Prerequisite to Take of":"(GIINFDS, Regularizada), (GIINFOPMLINF, Regularizada), (GIINFSISTD1, Regularizada)",
+    "is Prerequisite to Pass of":"(GIINFDS, Aprobada), (GIINFOPMLINF, Aprobada), (GIINFSISTD1, Aprobada)"
   },
   {
     "Course":"Teor\u00eda de la Empresa",
@@ -213,7 +259,9 @@
     "Semester":1,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINDINING, Regularizada), (GIINFIP2, Regularizada), (GIINFPR1, Aprobada)",
-    "Prerequisites to Pass":"(GIINDINING, Aprobada), (GIINFIP2, Aprobada)"
+    "Prerequisites to Pass":"(GIINDINING, Aprobada), (GIINFIP2, Aprobada)",
+    "is Prerequisite to Take of":"(GIINDTECOM, Regularizada), (GIINDLEG, Regularizada), (GIINDCON.Y PRE, Regularizada), (GIINDFHUM, Regularizada), (GIINDECON.POL, Regularizada), (GIINFOP1, Regularizada), (GIINFSNEG, Regularizada)",
+    "is Prerequisite to Pass of":"(GIINDTECOM, Aprobada), (GIINDLEG, Aprobada), (GIINDCON.Y PRE, Aprobada), (GIINDFHUM, Aprobada), (GIINDECON.POL, Aprobada), (GIINFOP1, Aprobada), (GIINFSNEG, Aprobada)"
   },
   {
     "Course":"Estad\u00edstica II",
@@ -222,7 +270,9 @@
     "Semester":1,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINDEST1, Regularizada), (GIINDAM1, Aprobada)",
-    "Prerequisites to Pass":"(GIINDEST1, Aprobada)"
+    "Prerequisites to Pass":"(GIINDEST1, Aprobada)",
+    "is Prerequisite to Take of":"(GIINDIOP, Regularizada), (GIINFOPMLINF, Regularizada)",
+    "is Prerequisite to Pass of":"(GIINDIOP, Aprobada), (GIINFOPMLINF, Aprobada)"
   },
   {
     "Course":"Laboratorio I",
@@ -231,7 +281,9 @@
     "Semester":1,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINFAED, Regularizada), (GIINFIP2, Aprobada)",
-    "Prerequisites to Pass":"(GIINFAED, Aprobada)"
+    "Prerequisites to Pass":"(GIINFAED, Aprobada)",
+    "is Prerequisite to Take of":"(GIINFL2, Regularizada)",
+    "is Prerequisite to Pass of":"(GIINFL2, Aprobada)"
   },
   {
     "Course":"Redes de Comunicaci\u00f3n de Datos",
@@ -240,7 +292,9 @@
     "Semester":1,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINFPR1, Aprobada)",
-    "Prerequisites to Pass":"(GIINFLCD, Aprobada)"
+    "Prerequisites to Pass":"(GIINFLCD, Aprobada)",
+    "is Prerequisite to Take of":"(GIINFSEGI, Regularizada)",
+    "is Prerequisite to Pass of":"(GIINFSEGI, Aprobada)"
   },
   {
     "Course":"Electr\u00f3nica Inform\u00e1tica",
@@ -249,7 +303,9 @@
     "Semester":1,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINFLCD, Regularizada), (GIINFIP2, Regularizada), (GIINFPR1, Aprobada)",
-    "Prerequisites to Pass":"(GIINFLCD, Aprobada), (GIINFIP2, Aprobada)"
+    "Prerequisites to Pass":"(GIINFLCD, Aprobada), (GIINFIP2, Aprobada)",
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"\u00c9tica General",
@@ -258,7 +314,9 @@
     "Semester":1,
     "Credits":"5.00",
     "Prerequisites to Take":"(GIINDANTROP, Regularizada), (GIINDIFI, Aprobada)",
-    "Prerequisites to Pass":"(GIINDANTROP, Aprobada)"
+    "Prerequisites to Pass":"(GIINDANTROP, Aprobada)",
+    "is Prerequisite to Take of":"(GIINDETPROF, Regularizada)",
+    "is Prerequisite to Pass of":"(GIINDETPROF, Aprobada)"
   },
   {
     "Course":"Dise\u00f1o de Sistemas",
@@ -267,7 +325,9 @@
     "Semester":1,
     "Credits":"13.00",
     "Prerequisites to Take":"(GIINFADA, Regularizada), (GIINFBD, Regularizada), (GIINFAED, Aprobada)",
-    "Prerequisites to Pass":"(GIINFADA, Aprobada), (GIINFBD, Aprobada)"
+    "Prerequisites to Pass":"(GIINFADA, Aprobada), (GIINFBD, Aprobada)",
+    "is Prerequisite to Take of":"(GIINFINGS, Regularizada), (GIINFL3, Regularizada), (GIINFASCS, Aprobada), (GIINFDDP, Aprobada)",
+    "is Prerequisite to Pass of":"(GIINFINGS, Aprobada), (GIINFL3, Aprobada)"
   },
   {
     "Course":"Laboratorio II",
@@ -276,7 +336,9 @@
     "Semester":2,
     "Credits":"15.00",
     "Prerequisites to Take":"(GIINFL1, Regularizada), (GIINFAED, Aprobada)",
-    "Prerequisites to Pass":"(GIINFL1, Aprobada)"
+    "Prerequisites to Pass":"(GIINFL1, Aprobada)",
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Ingenier\u00eda de Sistemas",
@@ -285,7 +347,9 @@
     "Semester":2,
     "Credits":"13.00",
     "Prerequisites to Take":"(GIINFDS, Regularizada), (GIINFADA, Aprobada)",
-    "Prerequisites to Pass":"(GIINFDS, Aprobada)"
+    "Prerequisites to Pass":"(GIINFDS, Aprobada)",
+    "is Prerequisite to Take of":"(GIINFASCS, Regularizada), (GIINFDDP, Regularizada), (GIINFL4, Aprobada)",
+    "is Prerequisite to Pass of":"(GIINFASCS, Aprobada), (GIINFDDP, Aprobada)"
   },
   {
     "Course":"Lenguajes de Programaci\u00f3n",
@@ -294,7 +358,9 @@
     "Semester":2,
     "Credits":"13.00",
     "Prerequisites to Take":"(GIINFADA, Regularizada), (GIINFAED, Aprobada)",
-    "Prerequisites to Pass":"(GIINFADA, Aprobada)"
+    "Prerequisites to Pass":"(GIINFADA, Aprobada)",
+    "is Prerequisite to Take of":"(GIINFPC, Regularizada)",
+    "is Prerequisite to Pass of":"(GIINFPC, Aprobada)"
   },
   {
     "Course":"Dise\u00f1o de Interacci\u00f3n",
@@ -303,7 +369,9 @@
     "Semester":2,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINFIP2, Regularizada), (GIINFPR1, Aprobada)",
-    "Prerequisites to Pass":"(GIINFIP2, Aprobada)"
+    "Prerequisites to Pass":"(GIINFIP2, Aprobada)",
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Moral, Persona y Valores",
@@ -312,7 +380,9 @@
     "Semester":2,
     "Credits":"8.00",
     "Prerequisites to Take":"(GIINDTE1, Regularizada), (GIINDIFI, Aprobada)",
-    "Prerequisites to Pass":"(GIINDTE1, Aprobada)"
+    "Prerequisites to Pass":"(GIINDTE1, Aprobada)",
+    "is Prerequisite to Take of":"(GIINDDOSIG, Regularizada)",
+    "is Prerequisite to Pass of":"(GIINDDOSIG, Aprobada)"
   },
   {
     "Course":"Investigaci\u00f3n Operativa",
@@ -321,7 +391,9 @@
     "Semester":2,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINDAL2, Regularizada), (GIINDEST2, Regularizada), (GIINDAL1, Aprobada), (GIINDEST1, Aprobada)",
-    "Prerequisites to Pass":"(GIINDAL2, Aprobada), (GIINDEST2, Aprobada)"
+    "Prerequisites to Pass":"(GIINDAL2, Aprobada), (GIINDEST2, Aprobada)",
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Laboratorio III",
@@ -330,7 +402,9 @@
     "Semester":1,
     "Credits":"30.00",
     "Prerequisites to Take":"(GIINFDS, Regularizada), (GEXTING, Aprobada), (GIINFADA, Aprobada), (1, Aprobado)",
-    "Prerequisites to Pass":"(GIINFDS, Aprobada)"
+    "Prerequisites to Pass":"(GIINFDS, Aprobada)",
+    "is Prerequisite to Take of":"(GIINFDDP, Regularizada)",
+    "is Prerequisite to Pass of":"(GIINFDDP, Aprobada)"
   },
   {
     "Course":"Programaci\u00f3n Concurrente",
@@ -339,7 +413,9 @@
     "Semester":1,
     "Credits":"8.00",
     "Prerequisites to Take":"(GIINFSISOP, Regularizada), (GIINFLP, Regularizada), (GIINFOC, Aprobada), (GIINFADA, Aprobada), (GEXTING, Aprobada), (1, Aprobado)",
-    "Prerequisites to Pass":"(GIINFSISOP, Aprobada), (GIINFLP, Aprobada)"
+    "Prerequisites to Pass":"(GIINFSISOP, Aprobada), (GIINFLP, Aprobada)",
+    "is Prerequisite to Take of":"(GIINFSISTD1, Regularizada), (GIINFTRGRAD, Regularizada)",
+    "is Prerequisite to Pass of":"(GIINFSISTD1, Aprobada), (GIINFTRGRAD, Regularizada)"
   },
   {
     "Course":"Aseguramiento de la Calidad del Software",
@@ -348,7 +424,9 @@
     "Semester":1,
     "Credits":"8.00",
     "Prerequisites to Take":"(GEXTING, Aprobada), (GIINFINGS, Regularizada), (GIINFDS, Aprobada), (1, Aprobado)",
-    "Prerequisites to Pass":"(GIINFINGS, Aprobada)"
+    "Prerequisites to Pass":"(GIINFINGS, Aprobada)",
+    "is Prerequisite to Take of":"(GIINFTRGRAD, Regularizada)",
+    "is Prerequisite to Pass of":"(GIINFTRGRAD, Regularizada)"
   },
   {
     "Course":"Seguridad Inform\u00e1tica",
@@ -357,7 +435,9 @@
     "Semester":1,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINFSISOP, Regularizada), (GIINFRCDA, Regularizada), (GIINFOC, Aprobada), (GIINFLCD, Aprobada), (GEXTING, Aprobada), (1, Aprobado)",
-    "Prerequisites to Pass":"(GIINFSISOP, Aprobada), (GIINFRCDA, Aprobada)"
+    "Prerequisites to Pass":"(GIINFSISOP, Aprobada), (GIINFRCDA, Aprobada)",
+    "is Prerequisite to Take of":"(GIINFTRGRAD, Regularizada)",
+    "is Prerequisite to Pass of":"(GIINFTRGRAD, Regularizada)"
   },
   {
     "Course":"\u00c9tica Profesional",
@@ -366,7 +446,9 @@
     "Semester":1,
     "Credits":"8.00",
     "Prerequisites to Take":"(GIINDETGEN, Regularizada), (GIINDANTROP, Aprobada), (GEXTING, Aprobada), (1, Aprobado)",
-    "Prerequisites to Pass":"(GIINDETGEN, Aprobada)"
+    "Prerequisites to Pass":"(GIINDETGEN, Aprobada)",
+    "is Prerequisite to Take of":"(GIINFTRGRAD, Regularizada)",
+    "is Prerequisite to Pass of":"(GIINFTRGRAD, Regularizada)"
   },
   {
     "Course":"Inteligencia Artificial",
@@ -375,7 +457,9 @@
     "Semester":1,
     "Credits":"10.00",
     "Prerequisites to Take":"(GEXTING, Aprobada), (GIINFBD, Regularizada), (GIINDEST2, Regularizada), (GIINFAED, Aprobada), (GIINDEST1, Aprobada), (1, Aprobado)",
-    "Prerequisites to Pass":"(GIINFBD, Aprobada), (GIINDEST2, Aprobada)"
+    "Prerequisites to Pass":"(GIINFBD, Aprobada), (GIINDEST2, Aprobada)",
+    "is Prerequisite to Take of":"(GIINFTRGRAD, Regularizada)",
+    "is Prerequisite to Pass of":"(GIINFTRGRAD, Regularizada)"
   },
   {
     "Course":"Sistemas Distribuidos",
@@ -384,7 +468,9 @@
     "Semester":2,
     "Credits":"8.00",
     "Prerequisites to Take":"(GIINFBD, Regularizada), (GIINFPC, Regularizada), (GIINFAED, Aprobada), (GIINFSISOP, Aprobada), (GEXTING, Aprobada), (1, Aprobado)",
-    "Prerequisites to Pass":"(GIINFBD, Aprobada), (GIINFPC, Aprobada)"
+    "Prerequisites to Pass":"(GIINFBD, Aprobada), (GIINFPC, Aprobada)",
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Comunicaci\u00f3n Efectiva",
@@ -393,7 +479,9 @@
     "Semester":2,
     "Credits":"5.00",
     "Prerequisites to Take":"(GEXTING, Aprobada), (GIINFTE, Regularizada), (GIINDINING, Aprobada), (1, Aprobado)",
-    "Prerequisites to Pass":"(GIINFTE, Aprobada)"
+    "Prerequisites to Pass":"(GIINFTE, Aprobada)",
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Legal",
@@ -402,7 +490,9 @@
     "Semester":2,
     "Credits":"8.00",
     "Prerequisites to Take":"(GIINFTE, Regularizada), (GIINDINING, Aprobada), (GEXTING, Aprobada), (1, Aprobado)",
-    "Prerequisites to Pass":"(GIINFTE, Aprobada)"
+    "Prerequisites to Pass":"(GIINFTE, Aprobada)",
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Responsabilidad Social",
@@ -411,7 +501,9 @@
     "Semester":2,
     "Credits":"5.00",
     "Prerequisites to Take":"(GEXTING, Aprobada), (GIINDTE2, Regularizada), (GIINDTE1, Aprobada), (1, Aprobado)",
-    "Prerequisites to Pass":"(GIINDTE2, Aprobada)"
+    "Prerequisites to Pass":"(GIINDTE2, Aprobada)",
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Trabajo de Grado",
@@ -420,7 +512,9 @@
     "Semester":1,
     "Credits":"52.00",
     "Prerequisites to Take":"(GIINFPC, Regularizada), (GIINFASCS, Regularizada), (GIINFSEGI, Regularizada), (GIINDETPROF, Regularizada), (GIINFOPMLINF, Regularizada), (GEXTING, Aprobada), (1, Aprobado), (2, Aprobado), (3, Aprobado)",
-    "Prerequisites to Pass":"(GIINFPC, Regularizada), (GIINFASCS, Regularizada), (GIINFSEGI, Regularizada), (GIINDETPROF, Regularizada), (GIINFOPMLINF, Regularizada), (GEXTING, Aprobada), (1, Aprobado), (2, Aprobado), (3, Aprobado)"
+    "Prerequisites to Pass":"(GIINFPC, Regularizada), (GIINFASCS, Regularizada), (GIINFSEGI, Regularizada), (GIINDETPROF, Regularizada), (GIINFOPMLINF, Regularizada), (GEXTING, Aprobada), (1, Aprobado), (2, Aprobado), (3, Aprobado)",
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Direcci\u00f3n de Proyectos",
@@ -429,7 +523,9 @@
     "Semester":1,
     "Credits":"13.00",
     "Prerequisites to Take":"(GIINFINGS, Regularizada), (GIINFL3, Regularizada), (GIINFDS, Aprobada), (GEXTING, Aprobada), (1, Aprobado)",
-    "Prerequisites to Pass":"(GIINFINGS, Aprobada), (GIINFL3, Aprobada)"
+    "Prerequisites to Pass":"(GIINFINGS, Aprobada), (GIINFL3, Aprobada)",
+    "is Prerequisite to Take of":"(GIINFL4, Regularizada)",
+    "is Prerequisite to Pass of":"(GIINFL4, Aprobada)"
   },
   {
     "Course":"Microeconom\u00eda Aplicada",
@@ -438,7 +534,9 @@
     "Semester":1,
     "Credits":"8.00",
     "Prerequisites to Take":"(GEXTING, Aprobada), (GIINFTE, Regularizada), (GIINDINING, Aprobada), (1, Aprobado)",
-    "Prerequisites to Pass":"(GIINFTE, Aprobada)"
+    "Prerequisites to Pass":"(GIINFTE, Aprobada)",
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Laboratorio IV",
@@ -447,7 +545,9 @@
     "Semester":2,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINFINGS, Aprobada), (GEXTING, Aprobada), (GIINFDDP, Regularizada), (1, Aprobado)",
-    "Prerequisites to Pass":"(GIINFDDP, Aprobada)"
+    "Prerequisites to Pass":"(GIINFDDP, Aprobada)",
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Factor Humano",
@@ -456,7 +556,9 @@
     "Semester":2,
     "Credits":"10.00",
     "Prerequisites to Take":"(GEXTING, Aprobada), (GIINFTE, Regularizada), (GIINDINING, Aprobada), (1, Aprobado)",
-    "Prerequisites to Pass":"(GIINFTE, Aprobada)"
+    "Prerequisites to Pass":"(GIINFTE, Aprobada)",
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Macroeconom\u00eda",
@@ -465,7 +567,9 @@
     "Semester":2,
     "Credits":"8.00",
     "Prerequisites to Take":"(GIINDINING, Aprobada), (GIINFTE, Regularizada), (GEXTING, Aprobada), (1, Aprobado)",
-    "Prerequisites to Pass":"(GIINFTE, Aprobada)"
+    "Prerequisites to Pass":"(GIINFTE, Aprobada)",
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Marketing",
@@ -474,7 +578,9 @@
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINFTE, Regularizada), (GIINDINING, Aprobada)",
-    "Prerequisites to Pass":"(GIINFTE, Aprobada)"
+    "Prerequisites to Pass":"(GIINFTE, Aprobada)",
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Sistemas de Negocios",
@@ -483,7 +589,9 @@
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":"(GIINFTE, Regularizada), (GIINDINING, Aprobada)",
-    "Prerequisites to Pass":"(GIINFTE, Aprobada)"
+    "Prerequisites to Pass":"(GIINFTE, Aprobada)",
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Dise\u00f1o y Programaci\u00f3n Orientado a Internet",
@@ -492,7 +600,9 @@
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Comunicaci\u00f3n de Datos",
@@ -501,7 +611,9 @@
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Dise\u00f1o Avanzado Orientado a Objetos",
@@ -510,7 +622,9 @@
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Seguridad Inform\u00e1tica II",
@@ -519,7 +633,9 @@
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Sistemas de Inteligencia de Negocios",
@@ -528,7 +644,9 @@
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Sistemas Distribuidos II",
@@ -537,7 +655,9 @@
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"An\u00e1lisis de Datos",
@@ -546,7 +666,9 @@
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Big Data",
@@ -555,7 +677,9 @@
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Computaci\u00f3n Gr\u00e1fica",
@@ -564,7 +688,9 @@
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Dise\u00f1o de Sistemas Digitales",
@@ -573,7 +699,9 @@
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Emprendimientos de Tecnolog\u00eda",
@@ -582,7 +710,9 @@
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Ingenier\u00eda de Software",
@@ -591,7 +721,9 @@
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Realidad Virtual",
@@ -600,7 +732,9 @@
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Automatizaci\u00f3n",
@@ -609,7 +743,9 @@
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Innovaci\u00f3n Tecnol\u00f3gica",
@@ -618,7 +754,9 @@
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Rob\u00f3tica y Visi\u00f3n Artificial",
@@ -627,7 +765,9 @@
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Sistema de Soporte de Decisiones",
@@ -636,7 +776,9 @@
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Sistemas de Comunicaciones",
@@ -645,7 +787,9 @@
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Sistemas Expertos",
@@ -654,7 +798,9 @@
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Teor\u00eda de la Computaci\u00f3n",
@@ -663,7 +809,9 @@
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Teor\u00eda de la Programaci\u00f3n",
@@ -672,7 +820,9 @@
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"F\u00edsica III",
@@ -681,7 +831,9 @@
     "Semester":null,
     "Credits":"15.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"L\u00f3gica",
@@ -690,7 +842,9 @@
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Medios de Representaci\u00f3n",
@@ -699,7 +853,9 @@
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Qu\u00edmica I",
@@ -708,7 +864,9 @@
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Sistemas de Informaci\u00f3n Gerencial",
@@ -717,7 +875,9 @@
     "Semester":null,
     "Credits":"8.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Conceptos B\u00e1sicos de Sistemas Embebidos",
@@ -726,7 +886,9 @@
     "Semester":null,
     "Credits":"5.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Introducci\u00f3n a la Inteligencia Artificial",
@@ -735,7 +897,9 @@
     "Semester":null,
     "Credits":"5.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Pr\u00e1ctica Profesional Supervisada",
@@ -744,7 +908,9 @@
     "Semester":null,
     "Credits":"33.00",
     "Prerequisites to Take":"(1, Aprobado), (2, Aprobado), (3, Aprobado)",
-    "Prerequisites to Pass":"(1, Aprobado), (2, Aprobado), (3, Aprobado)"
+    "Prerequisites to Pass":"(1, Aprobado), (2, Aprobado), (3, Aprobado)",
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Programa de Vida Universitaria",
@@ -753,7 +919,9 @@
     "Semester":null,
     "Credits":"10.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Taller de Expresi\u00f3n Oral y Escrita",
@@ -762,7 +930,9 @@
     "Semester":null,
     "Credits":"2.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Ingl\u00e9s Nivel I",
@@ -771,7 +941,9 @@
     "Semester":null,
     "Credits":null,
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":"(GIINFL3, Aprobada), (GIINFPC, Aprobada), (GIINFASCS, Aprobada), (GIINFSEGI, Aprobada), (GIINDETPROF, Aprobada), (GIINFOPMLINF, Aprobada), (GIINFSISTD1, Aprobada), (GIINDTECOM, Aprobada), (GIINDLEG, Aprobada), (GIINDDOSIG, Aprobada), (GIINFTRGRAD, Aprobada), (GIINFDDP, Aprobada), (GIINDCON.Y PRE, Aprobada), (GIINFL4, Aprobada), (GIINDFHUM, Aprobada), (GIINDECON.POL, Aprobada)",
+    "is Prerequisite to Pass of":"(GIINFTRGRAD, Aprobada)"
   },
   {
     "Course":"Ingl\u00e9s Nivel II",
@@ -780,7 +952,9 @@
     "Semester":null,
     "Credits":null,
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   },
   {
     "Course":"Seminario de Programaci\u00f3n",
@@ -789,6 +963,8 @@
     "Semester":null,
     "Credits":"3.00",
     "Prerequisites to Take":null,
-    "Prerequisites to Pass":null
+    "Prerequisites to Pass":null,
+    "is Prerequisite to Take of":null,
+    "is Prerequisite to Pass of":null
   }
 ]

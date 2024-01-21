@@ -77,7 +77,10 @@ export const Nodee = ({nodeId, name, type, highlightedNodes, setHighlightedNodes
         <button 
             id={nodeId}
             onDoubleClick={handleClick}
-            onMouseEnter={collectHighlighted}
+            onMouseEnter={ () => {
+                collectHighlighted();
+                enterNode()
+            }}
             onMouseLeave={() => {
                 setHighlightedNodes(new Set())
                 leaveNode()
