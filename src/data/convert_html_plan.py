@@ -79,9 +79,8 @@ def convert_html_plan(html_file, courses_in_first_sem, years):
 
     main_plan = pd.concat(courses).reset_index().drop(columns=['index'])
 
-    # Add the Courses each course is a prerequisite to
-    main_plan["is Prerequisite to Take of"] = None
-    main_plan["is Prerequisite to Pass of"] = None
+    main_plan["Prerequisite to Take for"] = None
+    main_plan["Prerequisite to Pass for"] = None
     for i, row in main_plan.iterrows():
         pattern = re.compile(r'(\([A-Za-z]+[0-9]*\, [A-Za-z0-9]+\))')
         if not pd.isnull(row['Prerequisites to Take']):
@@ -91,20 +90,20 @@ def convert_html_plan(html_file, courses_in_first_sem, years):
                 id = match1.split(', ')[0].lstrip('(')
                 status = match1.split(', ')[1].rstrip(')')
                 idx = main_plan.index[main_plan['ID'] == id]
-                cur_val = main_plan.iloc[idx[0]]['is Prerequisite to Take of']
+                cur_val = main_plan.iloc[idx[0]]['Prerequisite to Take for']
                 if pd.isnull(cur_val):
-                    main_plan['is Prerequisite to Take of'][idx[0]] = '(' + str(row['ID']) + ', ' + status + ')'
+                    main_plan['Prerequisite to Take for'][idx[0]] = '(' + str(row['ID']) + ', ' + status + ')'
                 else:
-                    main_plan['is Prerequisite to Take of'][idx[0]] = str(cur_val) +  ', ' + '(' + str(row['ID']) + ', ' + status + ')'
+                    main_plan['Prerequisite to Take for'][idx[0]] = str(cur_val) +  ', ' + '(' + str(row['ID']) + ', ' + status + ')'
             for match2 in matches2:
                 id = match2.split(', ')[0].lstrip('(')
                 status = match2.split(', ')[1].rstrip(')')
                 idx = main_plan.index[main_plan['ID'] == id]
-                cur_val = main_plan.iloc[idx[0]]['is Prerequisite to Pass of']
+                cur_val = main_plan.iloc[idx[0]]['Prerequisite to Pass for']
                 if pd.isnull(cur_val):
-                    main_plan['is Prerequisite to Pass of'][idx[0]] = '(' + str(row['ID']) + ', ' + status + ')'
+                    main_plan['Prerequisite to Pass for'][idx[0]] = '(' + str(row['ID']) + ', ' + status + ')'
                 else:
-                    main_plan['is Prerequisite to Pass of'][idx[0]] = str(cur_val) + ', ' + '(' + str(row['ID']) + ', ' + status + ')'
+                    main_plan['Prerequisite to Pass for'][idx[0]] = str(cur_val) + ', ' + '(' + str(row['ID']) + ', ' + status + ')'
 
     main_plan.to_excel('plan.xlsx')
     main_plan.to_json('plan.json', orient="records", indent=2)

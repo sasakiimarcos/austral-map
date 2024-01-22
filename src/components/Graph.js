@@ -33,6 +33,9 @@ export const Graph = ({ courses, coursesStatus }) =>  {
     // both this state and the state modifier to each node
     const [highlightedNodes, setHighlightedNodes] = useState(new Set());
 
+    // Create a list of the IDs of other courses, we later use this to avoid creating edges for electives
+    const otherCoursesID = otherCourses[0][1].map(course => {return course.ID})
+
     return (
         <div className='courses-container'>
             {/*<p>Received Map Data: {coursesStatus}</p>*/}
@@ -43,11 +46,20 @@ export const Graph = ({ courses, coursesStatus }) =>  {
                         {coursesGroup.map(course => {
                             const regex = /\(([^,]+),\s*Regularizada\)/g;
 
-                            const codesList = [];
-                            let match;
-                            while ((match = regex.exec(course['Prerequisites to Take'])) !== null) {
-                                const code = match[1];
-                                codesList.push(code);
+                            const codesList1 = [];
+                            const codesList2 = [];
+                            if (course.Year !== 'Electives'){
+                                let match;
+                                while ((match = regex.exec(course['Prerequisites to Take'])) !== null) {
+                                    const code = match[1];
+                                    codesList1.push(code);
+                                }
+                                while ((match = regex.exec(course['Prerequisite to Take for'])) !== null) {
+                                    const code = match[1];
+                                    if (!otherCoursesID.includes(code)) {
+                                        codesList2.push(code);
+                                    }
+                                }
                             }
 
                             return (
@@ -62,10 +74,10 @@ export const Graph = ({ courses, coursesStatus }) =>  {
                                         type={'course'}
                                         highlightedNodes={highlightedNodes}
                                         setHighlightedNodes={setHighlightedNodes}
-                                        adyacentNodes={codesList}
+                                        adjacentNodes={codesList1.concat(codesList2)}
                                     />
 
-                                    {codesList.map(prerequisite => (
+                                    {codesList1.map(prerequisite => (
                                         <Edge
                                             start={prerequisite}
                                             end={course.ID}

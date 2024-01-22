@@ -1,6 +1,6 @@
 import React from "react";
 import {useState, useRef} from "react";
-export const Nodee = ({nodeId, name, type, highlightedNodes, setHighlightedNodes, adyacentNodes}) => {
+export const Nodee = ({nodeId, name, type, highlightedNodes, setHighlightedNodes, adjacentNodes}) => {
     const [clicked, setClick] = useState(false);
     const nodeRef = useRef(null);
 
@@ -9,7 +9,7 @@ export const Nodee = ({nodeId, name, type, highlightedNodes, setHighlightedNodes
         // a future in order to include, for each course, those other
         // subjects the former is a prerequisite of.
 
-        let highlighted = new Set(adyacentNodes);
+        let highlighted = new Set(adjacentNodes);
         highlighted.add(nodeId);
 
         console.log(...highlighted);
