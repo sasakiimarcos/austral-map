@@ -1,8 +1,22 @@
 import React from "react";
 import {useState, useRef} from "react";
 export const Nodee = ({nodeId, name, type, highlightedNodes, setHighlightedNodes, adjacentNodes}) => {
+    const [status, setStatus] = useState(('not taken'))
     const [clicked, setClick] = useState(false);
     const nodeRef = useRef(null);
+
+    function handleSingleClick () {
+        if (status === 'not taken') {
+            setStatus('taken')
+            // alert('taken')
+        } else if (status === 'taken') {
+            setStatus('passed')
+            // alert('passed')
+        } else if (status === 'passed') {
+            setStatus('not taken')
+            // alert('not taken')
+        }
+    }
 
     function collectHighlighted() {
         // This function may be modified if the JSON is changed in
@@ -76,6 +90,7 @@ export const Nodee = ({nodeId, name, type, highlightedNodes, setHighlightedNodes
     return (
         <button 
             id={nodeId}
+            onClick={handleSingleClick}
             onDoubleClick={handleClick}
             onMouseEnter={ () => {
                 collectHighlighted();
