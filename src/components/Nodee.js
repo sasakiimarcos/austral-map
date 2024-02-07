@@ -5,19 +5,6 @@ export const Nodee = ({nodeId, name, type, highlightedNodes, setHighlightedNodes
     const [clicked, setClick] = useState(false);
     const nodeRef = useRef(null);
 
-    function handleSingleClick () {
-        if (status === 'not taken') {
-            setStatus('taken')
-            // alert('taken')
-        } else if (status === 'taken') {
-            setStatus('passed')
-            // alert('passed')
-        } else if (status === 'passed') {
-            setStatus('not taken')
-            // alert('not taken')
-        }
-    }
-
     function collectHighlighted() {
         // This function may be modified if the JSON is changed in
         // a future in order to include, for each course, those other
@@ -32,16 +19,29 @@ export const Nodee = ({nodeId, name, type, highlightedNodes, setHighlightedNodes
 
     function changeColor(){
         if(type === 'course'){
-            if(clicked) {
-                nodeRef.current.style.background = 'dimgray';
-                nodeRef.current.style.color = '#dedede'
-                setClick(false);
-            }
-            else{
+            if (status === 'not taken') {
+                setStatus('taken')
+                nodeRef.current.style.background = '#88861c';
+                nodeRef.current.style.color = 'light gray';
+            } else if (status === 'taken') {
+                setStatus('passed')
                 nodeRef.current.style.background = '#589f3c';
                 nodeRef.current.style.color = 'light gray';
-                setClick(true);
+            } else if (status === 'passed') {
+                setStatus('not taken')
+                nodeRef.current.style.background = 'dimgray';
+                nodeRef.current.style.color = '#dedede'
             }
+            // if(clicked) {
+            //     nodeRef.current.style.background = 'dimgray';
+            //     nodeRef.current.style.color = '#dedede'
+            //     setClick(false);
+            // }
+            // else{
+            //     nodeRef.current.style.background = '#589f3c';
+            //     nodeRef.current.style.color = 'light gray';
+            //     setClick(true);
+            // }
         }
     }
     function handleClick(){
@@ -51,19 +51,30 @@ export const Nodee = ({nodeId, name, type, highlightedNodes, setHighlightedNodes
 
     function enterNode() {
         if(type === 'course') {
-            if (clicked) {
-                // nodeRef.current.style.background = 'green';
-                if (nodeRef.current.style.background === 'dimgray') {
-                    nodeRef.current.style.color = '#dedede';
-                } else {
-                    nodeRef.current.style.color = 'white'
-                    nodeRef.current.style.background = '#589f3c';
-                }
-
-            } else {
-                nodeRef.current.style.color = '#dedede';
-                nodeRef.current.style.background = 'dimgray'
+            if (status === 'not taken') {
+                nodeRef.current.style.background = 'dimgray';
+                nodeRef.current.style.color = '#dedede'
+            } else if (status === 'taken') {
+                nodeRef.current.style.background = '#88861c';
+                nodeRef.current.style.color = 'white';
+            } else if (status === 'passed') {
+                nodeRef.current.style.background = '#589f3c';
+                nodeRef.current.style.color = 'white';
             }
+
+            // if (clicked) {
+            //     // nodeRef.current.style.background = 'green';
+            //     if (nodeRef.current.style.background === 'dimgray') {
+            //         nodeRef.current.style.color = '#dedede';
+            //     } else {
+            //         nodeRef.current.style.color = 'white'
+            //         nodeRef.current.style.background = '#589f3c';
+            //     }
+
+            // } else {
+            //     nodeRef.current.style.color = '#dedede';
+            //     nodeRef.current.style.background = 'dimgray'
+            // }
         } else {
             nodeRef.current.style.background = '#c75a1b';
             nodeRef.current.style.color = 'white';
@@ -72,15 +83,26 @@ export const Nodee = ({nodeId, name, type, highlightedNodes, setHighlightedNodes
 
     function leaveNode() {
         if(type === 'course') {
-            if (clicked) {
-                // Now that no node is hovered, return to full opacity
-                nodeRef.current.style.background = 'green';
-                nodeRef.current.style.color = 'light gray';
-            } else {
-                // Now that no node is hovered, return to full opacity
+            if (status === 'not taken') {
                 nodeRef.current.style.background = '#dedede';
                 nodeRef.current.style.color = 'black';
+            } else if (status === 'taken') {
+                nodeRef.current.style.background = '#eceb4c';
+                nodeRef.current.style.color = 'black';
+            } else if (status === 'passed') {
+                nodeRef.current.style.background = 'green';
+                nodeRef.current.style.color = 'white';
             }
+            // if (clicked) {
+            //
+            //     // Now that no node is hovered, return to full opacity
+            //     nodeRef.current.style.background = 'green';
+            //     nodeRef.current.style.color = 'light gray';
+            // } else {
+            //     // Now that no node is hovered, return to full opacity
+            //     nodeRef.current.style.background = '#dedede';
+            //     nodeRef.current.style.color = 'black';
+            // }
         } else {
             nodeRef.current.style.background = 'darksalmon';
             nodeRef.current.style.color = 'black';
@@ -90,7 +112,6 @@ export const Nodee = ({nodeId, name, type, highlightedNodes, setHighlightedNodes
     return (
         <button 
             id={nodeId}
-            onClick={handleSingleClick}
             onDoubleClick={handleClick}
             onMouseEnter={ () => {
                 collectHighlighted();
